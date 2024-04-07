@@ -1,0 +1,8 @@
+
+ if (movingDown == true)
+{
+	moveDroneDown();
+}
+
+
+

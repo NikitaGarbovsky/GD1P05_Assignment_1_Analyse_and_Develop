@@ -5,6 +5,7 @@
   "resources": [
     {"id":{"name":"objEnemy","path":"objects/objEnemy/objEnemy.yy",},"order":0,},
     {"id":{"name":"GameplayLevel","path":"rooms/GameplayLevel/GameplayLevel.yy",},"order":1,},
+    {"id":{"name":"scrDroneAI","path":"scripts/scrDroneAI/scrDroneAI.yy",},"order":0,},
     {"id":{"name":"sprDefault","path":"sprites/sprDefault/sprDefault.yy",},"order":0,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":0,},

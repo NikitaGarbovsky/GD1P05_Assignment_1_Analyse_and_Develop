@@ -1,4 +1,5 @@
 
+
 timer--;
 
 if(timer <= 0)
@@ -6,21 +7,31 @@ if(timer <= 0)
 	timer = time;
 }
 if (timer > 0)
-{
-	if (timer % 100 = 0)
+{ 
+	if (timer % movementSpeed = 0) // change this figure to modify how fast the enemies move
 	{
-		x = (x + 77);
-	}
-	if (x < 1504 && y < 154)
-	{
-		if (x = 1504 && y = 77)
+		if (hasLeftSideBeenReached() == true && movingDown == false)
 		{
-			y = (y + 77);	
+			movingLeft = false;
+			movingRight = true;
 		}
-	}
-	else 
-	{
-		x = (x - 2)	
+		else if (hasRightSideBeenReached() == true && movingDown == false)
+		{
+			movingLeft = true;
+			movingRight = false;
+			movingDown = true;
+		}
+		else if (movingLeft == true)
+		{
+			moveDroneLeft();
+			hasMovedDown = false;
+		}
+		else if (movingRight == true)
+		{
+			moveDroneRight();
+			hasMovedDown = false;
+		}
+		
 	}
 }
 
