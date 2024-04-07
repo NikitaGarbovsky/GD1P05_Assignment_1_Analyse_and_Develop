@@ -1,58 +1,64 @@
 
-
-function moveDroneRight()
+function moveDroneRight() // Move the drones right
 {
-	x = (x + 94);
+	var test;
+	test = objDroneAiWaveManager.droneHorizontalMovement;
+	x = (x + test);
 }
-function moveDroneLeft()
+function moveDroneLeft() // Move the drones left
 {
-	x = (x - 94);
+	var test;
+	test = objDroneAiWaveManager.droneHorizontalMovement;
+	x = (x - test);
 }
-function moveDroneDown()
+function moveDroneDown() // Move the drones down
 {
-	with (objEnemy)
+	with (objDrone)
 	{
-		changeSide();
-		y = (y + 77);
-		objEnemy.hasMovedDown = true;
-		objEnemy.movingDown = false;
+		var test;
+		test = objDroneAiWaveManager.droneVerticalMovement;
+		
+		changeDroneDirection(); 
+		y = ( y+ test);
+		objDrone.hasMovedDown = true; // tells the next step that the drones HAVE moved 
+		objDrone.movingDown = false; // tells the next step, moving down is completed
 	}
 }
-function changeSide()
+function changeDroneDirection() 
 {
-	with (objEnemy)
+	with (objDrone)
 	{
-		if (movingLeft == true && objEnemy.justMoved == false)
+		if (movingLeft == true && objDrone.justMoved == false)
 		{
-			objEnemy.movingLeft = false;
-			objEnemy.movingRight = true;
+			objDrone.movingLeft = false;
+			objDrone.movingRight = true;
 			
 		}
-		else if (movingRight == true  && objEnemy.justMoved == false)
+		else if (movingRight == true  && objDrone.justMoved == false)
 		{
-			objEnemy.movingLeft = true;
-			objEnemy.movingRight = false;
+			objDrone.movingLeft = true;
+			objDrone.movingRight = false;
 		}
-		objEnemy.justMoved = true;
+		objDrone.justMoved = true;
 	}
 }
-function hasLeftSideBeenReached()
+function hasLeftSideBeenReached() // checks if any drones have reached the left-hand side of the screen
 {
-	with (objEnemy)
+	with (objDrone)
 	{
-		if (x = 94 && objEnemy.movingDown == false &&  objEnemy.hasMovedDown == false)
+		if (x <= 67 && objDrone.movingDown == false &&  objDrone.hasMovedDown == false)
 		{
-			objEnemy.movingDown = true;
+			objDrone.movingDown = true;
 		}
 	}
 }
-function hasRightSideBeenReached()
+function hasRightSideBeenReached() // checks if any drones have reached the right-hand side of the screen
 {
-	with (objEnemy)
+	with (objDrone)
 	{
-		if (x = 1504 && objEnemy.movingDown == false && objEnemy.hasMovedDown == false)
+		if (x > 938 && objDrone.movingDown == false && objDrone.hasMovedDown == false)
 		{
-			objEnemy.movingDown = true;
+			objDrone.movingDown = true;
 		}
 	}
 }

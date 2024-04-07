@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objEnemy",
+  "name": "objDrone",
   "spriteId": {
     "name": "sprDefault",
     "path": "sprites/sprDefault/sprDefault.yy",

@@ -1,0 +1,2 @@
+hasLeftSideBeenReached();
+hasRightSideBeenReached();

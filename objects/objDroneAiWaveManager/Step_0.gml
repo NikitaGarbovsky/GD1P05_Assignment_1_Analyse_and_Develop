@@ -9,12 +9,12 @@ if (timer > 0)
 { 
 	if (timer % enemyMovespeed = 0) 
 	{
-		if (objEnemy.hasMovedDown == true && objEnemy.justMoved == true)
+		if (objDrone.hasMovedDown == true && objDrone.justMoved == true)
 			{
-				objEnemy.movingDown = false;
-				objEnemy.justMoved = false;
+				objDrone.movingDown = false;
+				objDrone.justMoved = false;
 			}
-		with(objEnemy)
+		with(objDrone)
 		{
 			if (movingDown == true)
 			{
