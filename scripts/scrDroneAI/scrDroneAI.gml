@@ -1,30 +1,23 @@
 
 function moveDroneRight() // Move the drones right
 {
-	var test;
-	test = objDroneAiWaveManager.droneHorizontalMovement;
-	x = (x + test);
+	x = (x + objDroneAiWaveManager.droneHorizontalMovement);
 }
 function moveDroneLeft() // Move the drones left
 {
-	var test;
-	test = objDroneAiWaveManager.droneHorizontalMovement;
-	x = (x - test);
+	x = (x - objDroneAiWaveManager.droneHorizontalMovement);
 }
 function moveDroneDown() // Move the drones down
 {
 	with (objDrone)
 	{
-		var test;
-		test = objDroneAiWaveManager.droneVerticalMovement;
-		
 		changeDroneDirection(); 
-		y = ( y+ test);
-		objDrone.hasMovedDown = true; // tells the next step that the drones HAVE moved 
-		objDrone.movingDown = false; // tells the next step, moving down is completed
+		y = (y + objDroneAiWaveManager.droneVerticalMovement); // grabs the vertical movement values from the AImanager
+		objDrone.hasMovedDown = true; // Tells the next step that the drones HAVE moved 
+		objDrone.movingDown = false; // Tells the next step, moving down is completed
 	}
 }
-function changeDroneDirection() 
+function changeDroneDirection() // Changes the horizontal movement direction of the drone 
 {
 	with (objDrone)
 	{
