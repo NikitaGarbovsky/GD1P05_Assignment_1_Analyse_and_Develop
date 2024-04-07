@@ -1,5 +1,4 @@
 
-
 timer--;
 
 if(timer <= 0)
@@ -11,8 +10,8 @@ if (timer > 0)
 	if (timer % movementSpeed = 0) 
 	{
 		
-		hasRightSideBeenReached();
-		hasLeftSideBeenReached();
+		
+		
 		if (objEnemy.movingDown == true)
 		{
 			moveDroneDown();
@@ -25,10 +24,13 @@ if (timer > 0)
 		else if(objEnemy.movingRight == true && objEnemy.movingDown == false && objEnemy.justMoved == false)
 		{
 			moveDroneRight();
+			objEnemy.hasMovedDown = false;
+			
 		}
 		else if(objEnemy.movingLeft == true && objEnemy.movingDown == false && objEnemy.justMoved == false)
 		{
 			moveDroneLeft();
+			objEnemy.hasMovedDown = false;
 		}
 		
 	}
