@@ -12,32 +12,38 @@ moveDroneLeft = function()
 }
 function moveDroneDown()
 {
-
-	objEnemy.y = (y + 77);	
-	movingDown = false;
+	objEnemy.y = (objEnemy.y + 77);
+	objEnemy.hasMovedDown = true;
+	objEnemy.movingDown = false;
+	objEnemy.justMoved = true;
+	changeSide();
+}
+function changeSide()
+{
+	if (objEnemy.movingLeft == true)
+	{
+		objEnemy.movingLeft = false;
+		objEnemy.movingRight = true;
+	}
+	else if (objEnemy.movingRight == true)
+	{
+		objEnemy.movingLeft = true;
+		objEnemy.movingRight = false;
+	}
 }
 
 function hasLeftSideBeenReached()
 {
-	
-	if (x = 94 && movingDown == false)
+	if (x = 94 && objEnemy.movingDown == false &&  objEnemy.hasMovedDown == false)
 	{
-		return true;
-	}
-	else 
-	{
-		return false;	
+		objEnemy.movingDown = true;
 	}
 }
 function hasRightSideBeenReached()
 {
-	if (x = 1504)
+	if (x = 1504 && objEnemy.movingDown == false && objEnemy.hasMovedDown == false)
 	{
-		return true;
-	}
-	else 
-	{
-		return false;	
+		objEnemy.movingDown = true;
 	}
 }
 

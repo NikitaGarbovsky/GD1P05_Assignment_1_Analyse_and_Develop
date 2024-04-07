@@ -8,28 +8,27 @@ if(timer <= 0)
 }
 if (timer > 0)
 { 
-	if (timer % movementSpeed = 0) // change this figure to modify how fast the enemies move
+	if (timer % movementSpeed = 0) 
 	{
-		if (hasLeftSideBeenReached() == true && movingDown == false)
+		
+		hasRightSideBeenReached();
+		hasLeftSideBeenReached();
+		if (objEnemy.movingDown == true)
 		{
-			movingLeft = false;
-			movingRight = true;
+			moveDroneDown();
 		}
-		else if (hasRightSideBeenReached() == true && movingDown == false)
+		else if (objEnemy.hasMovedDown == true && objEnemy.justMoved == true)
 		{
-			movingLeft = true;
-			movingRight = false;
-			movingDown = true;
+			objEnemy.movingDown = false;
+			objEnemy.justMoved = false;
 		}
-		else if (movingLeft == true)
-		{
-			moveDroneLeft();
-			hasMovedDown = false;
-		}
-		else if (movingRight == true)
+		else if(objEnemy.movingRight == true && objEnemy.movingDown == false && objEnemy.justMoved == false)
 		{
 			moveDroneRight();
-			hasMovedDown = false;
+		}
+		else if(objEnemy.movingLeft == true && objEnemy.movingDown == false && objEnemy.justMoved == false)
+		{
+			moveDroneLeft();
 		}
 		
 	}

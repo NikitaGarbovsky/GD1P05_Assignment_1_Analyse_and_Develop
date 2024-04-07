@@ -1,8 +1,0 @@
-
- if (movingDown == true)
-{
-	moveDroneDown();
-}
-
-
-
