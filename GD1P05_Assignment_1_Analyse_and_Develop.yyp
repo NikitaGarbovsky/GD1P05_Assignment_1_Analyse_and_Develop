@@ -8,6 +8,7 @@
     {"id":{"name":"scrDroneAI","path":"scripts/scrDroneAI/scrDroneAI.yy",},"order":0,},
     {"id":{"name":"sprDefault","path":"sprites/sprDefault/sprDefault.yy",},"order":0,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
+    {"id":{"name":"objWaveManager","path":"objects/objWaveManager/objWaveManager.yy",},"order":1,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":0,},
   ],
   "Options": [
