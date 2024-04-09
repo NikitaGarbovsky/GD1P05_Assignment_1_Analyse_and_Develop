@@ -1,7 +1,7 @@
 {
   "resourceType": "GMRoom",
   "resourceVersion": "1.0",
-  "name": "GameplayLevel",
+  "name": "FreePlayLevel",
   "isDnd": false,
   "volume": 1.0,
   "parentRoom": null,
@@ -26,8 +26,8 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_566434D2","path":"rooms/GameplayLevel/GameplayLevel.yy",},
-    {"name":"inst_582A1882","path":"rooms/GameplayLevel/GameplayLevel.yy",},
+    {"name":"inst_566434D2","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},
+    {"name":"inst_582A1882","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

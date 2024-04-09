@@ -3,8 +3,9 @@
   "resourceVersion": "1.6",
   "name": "GD1P05_Assignment_1_Analyse_and_Develop",
   "resources": [
+    {"id":{"name":"MainLevel","path":"rooms/MainLevel/MainLevel.yy",},"order":2,},
     {"id":{"name":"objDrone","path":"objects/objDrone/objDrone.yy",},"order":0,},
-    {"id":{"name":"GameplayLevel","path":"rooms/GameplayLevel/GameplayLevel.yy",},"order":1,},
+    {"id":{"name":"FreePlayLevel","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},"order":1,},
     {"id":{"name":"scrDroneAI","path":"scripts/scrDroneAI/scrDroneAI.yy",},"order":0,},
     {"id":{"name":"sprBasePlayerProjectile","path":"sprites/sprBasePlayerProjectile/sprBasePlayerProjectile.yy",},"order":2,},
     {"id":{"name":"sprDefault","path":"sprites/sprDefault/sprDefault.yy",},"order":0,},
@@ -34,8 +35,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"GameplayLevel","path":"rooms/GameplayLevel/GameplayLevel.yy",},},
+    {"roomId":{"name":"FreePlayLevel","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},},
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
+    {"roomId":{"name":"MainLevel","path":"rooms/MainLevel/MainLevel.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy","order":12,},
