@@ -2,6 +2,23 @@
 function MoveDroneRight() // Move the drones right
 {
 	x = (x + objDroneAiWaveManager.m_droneHorizontalMovement);
+	// TODO figure out how to change sprites frames during runtime
+	with (objDrone)
+	{
+		
+		if (image_index == 0)
+		{
+			image_index = 1;
+		}
+		else if(image_index == 1)
+		{
+			image_index = 2;	
+		}
+		else if(image_index == 2)
+		{
+			image_index = 0;	
+		}
+	}
 }
 function MoveDroneLeft() // Move the drones left
 {
@@ -54,6 +71,14 @@ function HasRightSideBeenReached() // Checks if any drones have reached the righ
 		}
 	}
 }
+// Manages which sprite to change to next, based off which direction they are moving
+var G_spawningDrone;
+function NextSpriteDirectionFrame()
+{
+	//Find out which direction they are currently facing
+	//Change the spawned drone to 
+	
+}
 // Spawns a drone at a desired location, this is used by all the spawning wave functions below
 function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 {
@@ -77,11 +102,14 @@ function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 			dronesAreMovingLeft = true;
 		}
 	}
-	var spawningDrone = instance_create_layer(_droneXSpawnPosition, _droneYSpawnPosition , "Instances", objDrone);
-	spawningDrone.image_alpha = 0;
-	
-	objDrone.m_movingLeft = dronesAreMovingLeft;
-	objDrone.m_movingRight = dronesAreMovingRight;
+	// Spawn the actual drone
+	G_spawningDrone = instance_create_layer(_droneXSpawnPosition, _droneYSpawnPosition , "Instances", objDrone);
+	G_spawningDrone.image_alpha = 0;
+	// TODO make it so when the drone spawn it is either given the black of red drone head to start off with
+	//var redOrBlack = spawningDrone.image_index
+	//if (redOrBlack 
+	//G_spawningDrone.image_index = 0;
+
 }
 // Spawn a single 10 line of drones
 function Spawn10by1DroneWave()

@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objDrone",
   "spriteId": {
-    "name": "sprDefault",
-    "path": "sprites/sprDefault/sprDefault.yy",
+    "name": "spr_DroneEnemy_Sheet",
+    "path": "sprites/spr_DroneEnemy_Sheet/spr_DroneEnemy_Sheet.yy",
   },
   "solid": false,
   "visible": true,
