@@ -55,11 +55,34 @@ function HasRightSideBeenReached() // Checks if any drones have reached the righ
 		}
 	}
 }
-// Spawns a drone at a desired location, used by all the spawning wave functions below
+// Spawns a drone at a desired location, this is used by all the spawning wave functions below
 function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 {
+	
+	var dronesAreMovingRight = true;
+	var dronesAreMovingLeft = true;
+	
+	// Before we spawn in drones, we need to check if there are already some on that exist,
+	// We do this before we need to sync the movement direction of the drones currently on the screen
+	// and the ones that are spawning so they wont move in opposite direction and bug out
+	if instance_exists(objDrone)
+	{
+		if(objDrone.m_movingRight == true)
+		{
+			dronesAreMovingRight = true;
+			dronesAreMovingLeft = false;
+		} 
+		else if (objDrone.m_movingLeft == true)
+		{
+			dronesAreMovingRight = false;
+			dronesAreMovingLeft = true;
+		}
+	}
 	var spawningDrone = instance_create_layer(_droneXSpawnPosition, _droneYSpawnPosition , "Instances", objDrone);
 	spawningDrone.image_alpha = 0;
+	
+	objDrone.m_movingLeft = dronesAreMovingLeft;
+	objDrone.m_movingRight = dronesAreMovingRight;
 }
 // Spawn a single 10 line of drones
 function Spawn10by1DroneWave()
@@ -72,7 +95,7 @@ function Spawn10by1DroneWave()
 		vDroneXSpawnPosition += 67;
 	}
 }
-// Spawn
+// Spawns a 10 by 2 grid of drones
 function Spawn10by2DroneWave()
 {
 	var vDroneXSpawnPosition = 201;
@@ -88,7 +111,23 @@ function Spawn10by2DroneWave()
 		vDroneXSpawnPosition += 67;
 	}
 }
-// Spawns a 10 by 4 grid of drones in the middle of the screen.
+// Spawns a 10 by 3 grid of drones 
+function Spawn10by3DroneWave()
+{
+	var vDroneXSpawnPosition = 201;
+	var vDroneYSpawnPosition = 154;
+	for(var i = 0; i < 10; i++)
+	{
+		for(var j = 0; j < 3; j++)
+		{
+			SpawnDrone(vDroneXSpawnPosition,vDroneYSpawnPosition);	
+			vDroneYSpawnPosition += 77;
+		}
+		vDroneYSpawnPosition = 154
+		vDroneXSpawnPosition += 67;
+	}
+}
+// Spawns a 10 by 4 grid of drones 
 function Spawn10by4DroneWave()
 {
 	var vDroneXSpawnPosition = 201;
