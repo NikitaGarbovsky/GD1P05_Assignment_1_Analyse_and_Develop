@@ -7,29 +7,30 @@ if(timer <= 0)
 }
 if (timer > 0)
 { 
-	if (timer % enemyMovespeed = 0) 
+	if (timer % m_enemyMovespeed = 0) 
 	{
-		if (objDrone.hasMovedDown == true && objDrone.justMoved == true)
+		if (objDrone.m_hasMovedDown == true)
 			{
-				objDrone.movingDown = false;
-				objDrone.justMoved = false;
+				objDrone.m_hasMovedDown = false;
 			}
 		with(objDrone)
 		{
-			if (movingDown == true)
+			if (m_movingDown == true)
 			{
-				moveDroneDown();
+				MoveDroneDown();
 			}
-			else if(movingRight == true && movingDown == false && justMoved == false)
+			else if(m_movingRight == true && m_movingDown == false && m_hasMovedDown == false)
 			{
-				moveDroneRight();
-				hasMovedDown = false;
+				MoveDroneRight();
+				objDrone.m_hasMovedDown = false;
+				objDrone.m_justChangedDirection = false;
 			
 			}
-			else if(movingLeft == true && movingDown == false && justMoved == false)
+			else if(m_movingLeft == true && m_movingDown == false && m_hasMovedDown == false)
 			{
-				moveDroneLeft();
-				hasMovedDown = false;
+				MoveDroneLeft();
+				objDrone.m_hasMovedDown = false;
+				objDrone.m_justChangedDirection = false;
 			}
 		}
 	}
