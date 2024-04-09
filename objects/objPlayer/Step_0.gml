@@ -7,3 +7,8 @@ if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 {
 	x += 5;	
 }
+// Launch projectile 
+if (keyboard_check_pressed(vk_space)) 
+{
+	instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+}

@@ -26,7 +26,6 @@ function ChangeDroneDirection() // Changes the horizontal movement direction of 
 		objDrone.m_movingLeft = false;
 		objDrone.m_movingRight = true;
 		objDrone.m_justChangedDirection = true;
-			
 	}
 	else if (objDrone.m_movingRight == true  && objDrone.m_hasMovedDown == false && objDrone.m_justChangedDirection == false)
 	{
@@ -62,9 +61,9 @@ function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 	var dronesAreMovingRight = true;
 	var dronesAreMovingLeft = true;
 	
-	// Before we spawn in drones, we need to check if there are already some on that exist,
-	// We do this before we need to sync the movement direction of the drones currently on the screen
-	// and the ones that are spawning so they wont move in opposite direction and bug out
+	// Before we spawn in drones, we need to check if there are already some that exist,
+	// We do this because we need to sync the movement direction of the drones that will spawn,
+	// To the ones already on the screen. Otherwise they will bug out moving in different directions.
 	if instance_exists(objDrone)
 	{
 		if(objDrone.m_movingRight == true)
