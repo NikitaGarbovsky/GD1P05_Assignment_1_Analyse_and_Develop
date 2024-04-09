@@ -58,7 +58,6 @@ if instance_exists(objDrone)
 						MoveDroneRight();
 						objDrone.m_hasMovedDown = false;
 						objDrone.m_justChangedDirection = false;
-			
 					}
 					else if(m_movingLeft == true && m_movingDown == false && m_hasMovedDown == false)
 					{
