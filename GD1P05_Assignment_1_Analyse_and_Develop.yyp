@@ -9,6 +9,7 @@
     {"id":{"name":"scrDroneAI","path":"scripts/scrDroneAI/scrDroneAI.yy",},"order":0,},
     {"id":{"name":"sprBasePlayerProjectile","path":"sprites/sprBasePlayerProjectile/sprBasePlayerProjectile.yy",},"order":2,},
     {"id":{"name":"sprDefault","path":"sprites/sprDefault/sprDefault.yy",},"order":0,},
+    {"id":{"name":"spr_DroneEnemy_Sheet","path":"sprites/spr_DroneEnemy_Sheet/spr_DroneEnemy_Sheet.yy",},"order":3,},
     {"id":{"name":"Font1","path":"fonts/Font1/Font1.yy",},"order":0,},
     {"id":{"name":"objDroneAiWaveManager","path":"objects/objDroneAiWaveManager/objDroneAiWaveManager.yy",},"order":1,},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},"order":1,},
