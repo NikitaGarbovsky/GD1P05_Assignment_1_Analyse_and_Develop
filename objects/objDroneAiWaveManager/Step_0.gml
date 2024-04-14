@@ -58,12 +58,62 @@ if instance_exists(objDrone)
 						MoveDroneRight();
 						objDrone.m_hasMovedDown = false;
 						objDrone.m_justChangedDirection = false;
+						//Changes the animation frame of the drone
+						if (image_index == 0)
+						{
+							image_index = 5;
+						}
+						else if(image_index == 5)
+						{
+							image_index = 4;	
+						}
+						else if(image_index == 4)
+						{
+							image_index = 3;	
+						}
+						else if(image_index == 3)
+						{
+							image_index = 2;	
+						}
+						else if (image_index == 2)
+						{
+							image_index = 1;	
+						}
+						else if (image_index == 1)
+						{
+							image_index = 0;	
+						}
 					}
 					else if(m_movingLeft == true && m_movingDown == false && m_hasMovedDown == false)
 					{
 						MoveDroneLeft();
 						objDrone.m_hasMovedDown = false;
 						objDrone.m_justChangedDirection = false;
+						// Changes the animation of the drone
+						if (image_index == 0)
+						{
+							image_index = 1;
+						}
+						else if(image_index == 1)
+						{
+							image_index = 2;	
+						}
+						else if(image_index == 2)
+						{
+							image_index = 3;	
+						}
+						else if(image_index == 3)
+						{
+							image_index = 4;	
+						}
+						else if(image_index == 4)
+						{
+							image_index = 5;	
+						}
+						else if (image_index == 5)
+						{
+							image_index = 0 ;	
+						}
 					}
 				}
 			}

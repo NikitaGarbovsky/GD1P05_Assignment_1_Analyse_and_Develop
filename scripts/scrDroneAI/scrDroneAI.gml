@@ -6,23 +6,17 @@ function MoveDroneRight() // Move the drones right
 	with (objDrone)
 	{
 		
-		if (image_index == 0)
-		{
-			image_index = 1;
-		}
-		else if(image_index == 1)
-		{
-			image_index = 2;	
-		}
-		else if(image_index == 2)
-		{
-			image_index = 0;	
-		}
+		
 	}
 }
 function MoveDroneLeft() // Move the drones left
 {
 	x = (x - objDroneAiWaveManager.m_droneHorizontalMovement);
+	with (objDrone)
+	{
+		
+		
+	}
 }
 function MoveDroneDown() // Move the drones down
 {
