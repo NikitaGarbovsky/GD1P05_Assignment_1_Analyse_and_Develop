@@ -2,21 +2,10 @@
 function MoveDroneRight() // Move the drones right
 {
 	x = (x + objDroneAiWaveManager.m_droneHorizontalMovement);
-	// TODO figure out how to change sprites frames during runtime
-	with (objDrone)
-	{
-		
-		
-	}
 }
 function MoveDroneLeft() // Move the drones left
 {
 	x = (x - objDroneAiWaveManager.m_droneHorizontalMovement);
-	with (objDrone)
-	{
-		
-		
-	}
 }
 function MoveDroneDown() // Move the drones down
 {
@@ -65,18 +54,9 @@ function HasRightSideBeenReached() // Checks if any drones have reached the righ
 		}
 	}
 }
-// Manages which sprite to change to next, based off which direction they are moving
-var G_spawningDrone;
-function NextSpriteDirectionFrame()
-{
-	//Find out which direction they are currently facing
-	//Change the spawned drone to 
-	
-}
 // Spawns a drone at a desired location, this is used by all the spawning wave functions below
 function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 {
-	
 	var dronesAreMovingRight = true;
 	var dronesAreMovingLeft = true;
 	
