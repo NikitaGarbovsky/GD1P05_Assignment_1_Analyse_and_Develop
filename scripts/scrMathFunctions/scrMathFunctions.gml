@@ -1,6 +1,9 @@
 
-function scrMathFunctions(){
-	
+// The main Lerp function used 
+function math_Lerp(_start,_end,_alpha)
+{
+	var result = _start + (_end - _start) * _alpha;
+	return result;
 }
 
 function getDistance(_x1,_y1,_x2,_y2)
