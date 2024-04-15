@@ -13,6 +13,14 @@ function math_QuadraticBezier(_p0, _p1, _p2, _alpha)
 	var result = math_Lerp(lerp1, lerp2, _alpha);
 	return result;
 }
+function math_CubicBezier(_p0,_p1,_p2,_p3, _alpha)
+{
+	var bezier1 = math_QuadraticBezier(_p0, _p1, _p2, _alpha);
+	var bezier2 = math_QuadraticBezier(_p1, _p2, _p3, _alpha);	
+	
+	var result = math_Lerp(bezier1, bezier2, _alpha);
+	return result;
+}
 function getDistance(_x1,_y1,_x2,_y2)
 {
 	var x3 = _x2 - _x1;
