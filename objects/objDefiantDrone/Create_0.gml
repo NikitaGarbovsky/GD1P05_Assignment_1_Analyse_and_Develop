@@ -6,8 +6,8 @@ startX = x;
 startY = y;
 
 // The end positions of the drone
-endX = 0;
-endY = 0;
+endX = 335;
+endY = 770;
 
 //
 lerpTime  = 2;
