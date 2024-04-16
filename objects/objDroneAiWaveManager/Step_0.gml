@@ -1,4 +1,3 @@
-
 // Stops all drones on the screen in their tracks
 if (keyboard_check_pressed(vk_alt))
 {

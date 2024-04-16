@@ -34,3 +34,17 @@ function getDistance(_x1,_y1,_x2,_y2)
 	
 	return distance;
 }
+function drawCollisionCircle(_a, _b, _r)
+{
+	var x_pos, x_pos2, y_pos, y_pos2;
+	for (var t = 0; t < 2*pi; t = t + ((2*pi)/10))
+	{
+		x_pos = _a + (_r * cos(t));
+		y_pos = _b + (_r * sin(t));
+		
+		x_pos2 = _a + (_r * cos(t + ((2*pi)/10)));
+		y_pos2 = _b + (_r * sin(t + ((2*pi)/10)));
+		
+		draw_line_width_color(x_pos, y_pos, x_pos2, y_pos2, 2, c_lime, c_lime);
+	}
+}
