@@ -14,7 +14,7 @@ if (keyboard_check(vk_control))
 		}
 	}
 }
-// checks if the spline points are viewable. 
+// Enables or disables the view of the sprint points based on if the debug mode is on or off 
 if (m_DebugMode == false)
 {
 	objSplinePoint1.image_alpha = 0;
