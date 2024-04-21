@@ -1,5 +1,5 @@
 
-image_speed = 1;
+image_speed = 0.1;
 
 // The starting positions of the drone
 startX = objSplinePoint1.x;
