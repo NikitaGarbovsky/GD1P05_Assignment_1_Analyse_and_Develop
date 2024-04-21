@@ -28,7 +28,7 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "SplinePoints",
-    "path": "folders/Objects/SplinePoints.yy",
+    "name": "SplinePointObjects",
+    "path": "folders/Objects/SplinePointObjects.yy",
   },
 }

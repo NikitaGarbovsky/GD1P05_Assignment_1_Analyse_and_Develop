@@ -41,7 +41,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "GameplayObjects",
+    "path": "folders/Objects/GameplayObjects.yy",
   },
 }

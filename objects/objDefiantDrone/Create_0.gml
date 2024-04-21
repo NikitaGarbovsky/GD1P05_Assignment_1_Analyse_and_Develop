@@ -1,9 +1,11 @@
 
+// The framerate of the spritesheet that is attached to this object.
 image_speed = 0.1;
  
+// The total amount of time between 0 - 1 for the object to travel. 
 travelTime = 0;
 
-
+// An array with all the x & y positions (within 16 structs) of each of the spline objects. 
 splinePoints = [
 	{
 		splinePointX : objSplinePoint1.x,

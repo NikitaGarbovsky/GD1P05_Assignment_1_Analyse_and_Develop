@@ -1,6 +1,7 @@
 
-travelTime += 1 / 600;
-
+if(objDefiantDroneManager.m_SplineTrack == true && m_MovingState == true)
+{
+	travelTime += 1 / objDefiantDroneManager.m_SplineTrackSpeed;
 
 var normalizedTravelTime = travelTime % 1;
 
@@ -12,10 +13,29 @@ x = math_CubicBezier(splinePoints[currentBezierCurve].splinePointX,
 					splinePoints[currentBezierCurve+3].splinePointX, 
 					normalizedTravelTime);
 
-
 y = math_CubicBezier(splinePoints[currentBezierCurve].splinePointY, 
 					splinePoints[currentBezierCurve+1].splinePointY, 
 					splinePoints[currentBezierCurve+2].splinePointY, 
 					splinePoints[currentBezierCurve+3].splinePointY, 
 					normalizedTravelTime);
+
+}
+else if (objDefiantDroneManager.m_BezierTrack == true && m_MovingState == true)
+{
+	travelTime += 1 / objDefiantDroneManager.m_BezierTrackSpeed;
+	
+	var alpha = travelTime / 1;
+	
+	x = math_CubicBezier(splinePoints[0].splinePointX, 
+						splinePoints[1].splinePointX, 
+						splinePoints[2].splinePointX, 
+						splinePoints[3].splinePointX,
+						alpha);
+	y = math_CubicBezier(splinePoints[0].splinePointY, 
+							splinePoints[1].splinePointY,
+							splinePoints[2].splinePointY,
+							splinePoints[3].splinePointY,
+						alpha);
+
+}
 
