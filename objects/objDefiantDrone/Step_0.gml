@@ -1,7 +1,20 @@
 
-currentLerpTime += 1 / 300;
+travelTime += 1 / 300;
 
-var alpha = currentLerpTime / lerpTime;
+var normalizedTravelTime = travelTime % 1;
 
-x = math_CubicBezier(startX, objSplinePoint2.x, objSplinePoint3.x , endX, alpha);
-y = math_CubicBezier(startY, objSplinePoint2.y, objSplinePoint3.y , endY, alpha);
+var currentBezierCurve = (floor(travelTime) * 3) % (array_length(splinePoints) - 1);
+	
+x = math_CubicBezier(splinePoints[currentBezierCurve].splinePointX, 
+					splinePoints[currentBezierCurve+1].splinePointX, 
+					splinePoints[currentBezierCurve+2].splinePointX, 
+					splinePoints[currentBezierCurve+3].splinePointX, 
+					normalizedTravelTime);
+
+
+y = math_CubicBezier(splinePoints[currentBezierCurve].splinePointY, 
+					splinePoints[currentBezierCurve+1].splinePointY, 
+					splinePoints[currentBezierCurve+2].splinePointY, 
+					splinePoints[currentBezierCurve+3].splinePointY, 
+					normalizedTravelTime);
+
