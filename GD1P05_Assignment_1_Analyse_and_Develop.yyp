@@ -51,6 +51,7 @@
     {"id":{"name":"sprSpline_2","path":"sprites/sprSpline_2/sprSpline_2.yy",},"order":3,},
     {"id":{"name":"objPlayer","path":"objects/objPlayer/objPlayer.yy",},"order":2,},
     {"id":{"name":"sprSpline_11","path":"sprites/sprSpline_11/sprSpline_11.yy",},"order":12,},
+    {"id":{"name":"objDebugManager","path":"objects/objDebugManager/objDebugManager.yy",},"order":7,},
     {"id":{"name":"sprSpline_6","path":"sprites/sprSpline_6/sprSpline_6.yy",},"order":7,},
     {"id":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},"order":0,},
   ],
