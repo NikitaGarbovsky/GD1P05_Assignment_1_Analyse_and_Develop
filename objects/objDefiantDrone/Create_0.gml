@@ -1,8 +1,8 @@
 
 image_speed = 0.1;
  
-lerpTime  = 1;
 travelTime = 0;
+
 
 splinePoints = [
 	{

@@ -4,6 +4,7 @@ timer = time;
 
 //Spawn10by1DroneWave();
 
+// Testing ui elements (will probably do it another way)
 x1 = 134;
 y1 = 924;
 x2 = 871;

@@ -1,5 +1,6 @@
 
-travelTime += 1 / 300;
+travelTime += 1 / 600;
+
 
 var normalizedTravelTime = travelTime % 1;
 

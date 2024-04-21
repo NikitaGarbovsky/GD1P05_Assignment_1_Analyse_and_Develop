@@ -34,6 +34,7 @@
     {"id":{"name":"sprSpline_8","path":"sprites/sprSpline_8/sprSpline_8.yy",},"order":9,},
     {"id":{"name":"sprPlayer","path":"sprites/sprPlayer/sprPlayer.yy",},"order":1,},
     {"id":{"name":"spr_HostileDefiantDroneEnemy_Sheet","path":"sprites/spr_HostileDefiantDroneEnemy_Sheet/spr_HostileDefiantDroneEnemy_Sheet.yy",},"order":4,},
+    {"id":{"name":"objDefiantDroneManager","path":"objects/objDefiantDroneManager/objDefiantDroneManager.yy",},"order":6,},
     {"id":{"name":"scrMathFunctions","path":"scripts/scrMathFunctions/scrMathFunctions.yy",},"order":1,},
     {"id":{"name":"objSplinePoint13","path":"objects/objSplinePoint13/objSplinePoint13.yy",},"order":12,},
     {"id":{"name":"objSplinePoint12","path":"objects/objSplinePoint12/objSplinePoint12.yy",},"order":11,},
