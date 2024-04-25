@@ -2,7 +2,10 @@
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
   "name": "objSplinePointLeft1",
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_SplineLeftSide1",
+    "path": "sprites/spr_SplineLeftSide1/spr_SplineLeftSide1.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,

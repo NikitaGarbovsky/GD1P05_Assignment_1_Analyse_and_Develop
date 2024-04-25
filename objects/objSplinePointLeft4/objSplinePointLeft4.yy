@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objSplinePointLeft4",
   "spriteId": {
-    "name": "spr_SplineLeftSide1",
-    "path": "sprites/spr_SplineLeftSide1/spr_SplineLeftSide1.yy",
+    "name": "spr_SplineLeftSide4",
+    "path": "sprites/spr_SplineLeftSide4/spr_SplineLeftSide4.yy",
   },
   "solid": false,
   "visible": true,

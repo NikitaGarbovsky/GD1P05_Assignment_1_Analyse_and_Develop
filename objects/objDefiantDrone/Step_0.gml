@@ -7,18 +7,18 @@ if (m_MovingState == true)
 		travelTime += 1 / objDefiantDroneManager.m_SplineTrackSpeed;
 
 		var normalizedTravelTime = travelTime % 1;
-		var currentBezierCurve = (floor(travelTime) * 3) % (array_length(splinePoints) - 1);
+		var currentBezierCurve = (floor(travelTime) * 3) % (array_length(rightSplinePoints) - 1);
 	
-		x = math_CubicBezier(splinePoints[currentBezierCurve].splinePointX, 
-							splinePoints[currentBezierCurve+1].splinePointX, 
-							splinePoints[currentBezierCurve+2].splinePointX, 
-							splinePoints[currentBezierCurve+3].splinePointX, 
+		x = math_CubicBezier(rightSplinePoints[currentBezierCurve].splinePointX, 
+							rightSplinePoints[currentBezierCurve+1].splinePointX, 
+							rightSplinePoints[currentBezierCurve+2].splinePointX, 
+							rightSplinePoints[currentBezierCurve+3].splinePointX, 
 							normalizedTravelTime);
 
-		y = math_CubicBezier(splinePoints[currentBezierCurve].splinePointY, 
-							splinePoints[currentBezierCurve+1].splinePointY, 
-							splinePoints[currentBezierCurve+2].splinePointY, 
-							splinePoints[currentBezierCurve+3].splinePointY, 
+		y = math_CubicBezier(rightSplinePoints[currentBezierCurve].splinePointY, 
+							rightSplinePoints[currentBezierCurve+1].splinePointY, 
+							rightSplinePoints[currentBezierCurve+2].splinePointY, 
+							rightSplinePoints[currentBezierCurve+3].splinePointY, 
 							normalizedTravelTime);
 
 	}
@@ -29,15 +29,15 @@ if (m_MovingState == true)
 	
 		var alpha = travelTime / 1;
 	
-		x = math_CubicBezier(splinePoints[0].splinePointX, 
-							splinePoints[1].splinePointX, 
-							splinePoints[2].splinePointX, 
-							splinePoints[3].splinePointX,
+		x = math_CubicBezier(rightSplinePoints[0].splinePointX, 
+							rightSplinePoints[1].splinePointX, 
+							rightSplinePoints[2].splinePointX, 
+							rightSplinePoints[3].splinePointX,
 							alpha);
-		y = math_CubicBezier(splinePoints[0].splinePointY, 
-								splinePoints[1].splinePointY,
-								splinePoints[2].splinePointY,
-								splinePoints[3].splinePointY,
+		y = math_CubicBezier(rightSplinePoints[0].splinePointY, 
+								rightSplinePoints[1].splinePointY,
+								rightSplinePoints[2].splinePointY,
+								rightSplinePoints[3].splinePointY,
 							alpha);
 	}
 }

@@ -6,69 +6,69 @@ image_speed = 0.1;
 travelTime = 0;
 
 // An array with all the x & y positions (within 16 structs) of each of the spline objects. 
-splinePoints = [
+rightSplinePoints = [
 	{
-		splinePointX : objSplinePoint1.x,
-		splinePointY : objSplinePoint1.y,
+		splinePointX : objSplinePointRight1.x,
+		splinePointY : objSplinePointRight1.y,
 	},
 	{
-		splinePointX : objSplinePoint2.x,
-		splinePointY : objSplinePoint2.y,
+		splinePointX : objSplinePointRight2.x,
+		splinePointY : objSplinePointRight2.y,
 	},
 	{
-		splinePointX : objSplinePoint3.x,
-		splinePointY : objSplinePoint3.y,
+		splinePointX : objSplinePointRight3.x,
+		splinePointY : objSplinePointRight3.y,
 	},
 	{
-		splinePointX : objSplinePoint4.x,
-		splinePointY : objSplinePoint4.y,
+		splinePointX : objSplinePointRight4.x,
+		splinePointY : objSplinePointRight4.y,
 	},
 	{
-		splinePointX : objSplinePoint5.x,
-		splinePointY : objSplinePoint5.y,
+		splinePointX : objSplinePointRight5.x,
+		splinePointY : objSplinePointRight5.y,
 	},
 	{
-		splinePointX : objSplinePoint6.x,
-		splinePointY : objSplinePoint6.y,
+		splinePointX : objSplinePointRight6.x,
+		splinePointY : objSplinePointRight6.y,
 	},
 	{
-		splinePointX : objSplinePoint7.x,
-		splinePointY : objSplinePoint7.y,
+		splinePointX : objSplinePointRight7.x,
+		splinePointY : objSplinePointRight7.y,
 	},
 	{
-		splinePointX : objSplinePoint8.x,
-		splinePointY : objSplinePoint8.y,
+		splinePointX : objSplinePointRight8.x,
+		splinePointY : objSplinePointRight8.y,
 	},
 	{
-		splinePointX : objSplinePoint9.x,
-		splinePointY : objSplinePoint9.y,
+		splinePointX : objSplinePointRight9.x,
+		splinePointY : objSplinePointRight9.y,
 	},
 	{
-		splinePointX : objSplinePoint10.x,
-		splinePointY : objSplinePoint10.y,
+		splinePointX : objSplinePointRight10.x,
+		splinePointY : objSplinePointRight10.y,
 	},
 	{
-		splinePointX : objSplinePoint11.x,
-		splinePointY : objSplinePoint11.y,
+		splinePointX : objSplinePointRight11.x,
+		splinePointY : objSplinePointRight11.y,
 	},
 	{
-		splinePointX : objSplinePoint12.x,
-		splinePointY : objSplinePoint12.y,
+		splinePointX : objSplinePointRight12.x,
+		splinePointY : objSplinePointRight12.y,
 	},
 	{
-		splinePointX : objSplinePoint13.x,
-		splinePointY : objSplinePoint13.y,
+		splinePointX : objSplinePointRight13.x,
+		splinePointY : objSplinePointRight13.y,
 	},
 	{
-		splinePointX : objSplinePoint14.x,
-		splinePointY : objSplinePoint14.y,
+		splinePointX : objSplinePointRight14.x,
+		splinePointY : objSplinePointRight14.y,
 	},
 	{
-		splinePointX : objSplinePoint15.x,
-		splinePointY : objSplinePoint15.y,
+		splinePointX : objSplinePointRight15.x,
+		splinePointY : objSplinePointRight15.y,
 	},
 	{
-		splinePointX : objSplinePoint16.x,
-		splinePointY : objSplinePoint16.y,
+		splinePointX : objSplinePointRight16.x,
+		splinePointY : objSplinePointRight16.y,
 	}
 ]
