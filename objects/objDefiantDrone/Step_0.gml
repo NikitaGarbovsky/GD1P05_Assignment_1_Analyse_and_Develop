@@ -1,14 +1,13 @@
 
-with (objBasePlayerProjectile)
-{
-	if collision_ellipse(x-21,x-74,x+21,x+74, objBasePlayerProjectile, true, true) != noone
+
+	if collision_ellipse(x-21,y-74,x+21,y+74, objBasePlayerProjectile, true, true) != noone
 	{
-		instance_destroy(other);
+		instance_destroy(objBasePlayerProjectile);
 		
 		m_AttackingState = true;
 		m_MovingState = false;
 	}
-}
+
 
 // The moving state of the defiant drone. 
 // Moves through the spline or bezier curve track
