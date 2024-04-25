@@ -18,7 +18,7 @@ if (keyboard_check_pressed(ord("1")))
 if (keyboard_check_pressed(ord("2")))
 {
 	Spawn10by2DroneWave();
-}
+}    
 if (keyboard_check_pressed(ord("3")))
 {
 	Spawn10by3DroneWave();
@@ -33,9 +33,10 @@ if instance_exists(objDrone)
 	if(objDroneAiWaveManager.m_canDronesStartMoving == true)
 	{
 		timer--;
-
+		// If timer has reached 0
 		if(timer <= 0)
 		{
+			// Reset timer
 			timer = time;
 		}
 		if (timer > 0)
@@ -52,10 +53,9 @@ if instance_exists(objDrone)
 					{
 						MoveDroneDown();
 					}
-					else if(m_movingRight == true && m_movingDown == false && m_hasMovedDown == false)
+ 					else if(m_movingRight == true && m_movingDown == false && m_hasMovedDown == false)
 					{
 						MoveDroneRight();
-						objDrone.m_hasMovedDown = false;
 						objDrone.m_justChangedDirection = false;
 						//Changes the animation frame of the drone
 						if (image_index == 0)
@@ -86,7 +86,6 @@ if instance_exists(objDrone)
 					else if(m_movingLeft == true && m_movingDown == false && m_hasMovedDown == false)
 					{
 						MoveDroneLeft();
-						objDrone.m_hasMovedDown = false;
 						objDrone.m_justChangedDirection = false;
 						// Changes the animation of the drone
 						if (image_index == 0)

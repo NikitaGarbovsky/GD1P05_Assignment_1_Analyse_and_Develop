@@ -1,4 +1,3 @@
-
 // The main Lerp function used 
 function math_Lerp(_start,_end,_alpha)
 {

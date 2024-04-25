@@ -79,11 +79,6 @@ function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 	// Spawn the actual drone
 	G_spawningDrone = instance_create_layer(_droneXSpawnPosition, _droneYSpawnPosition , "Instances", objDrone);
 	G_spawningDrone.image_alpha = 0;
-	// TODO make it so when the drone spawn it is either given the black of red drone head to start off with
-	//var redOrBlack = spawningDrone.image_index
-	//if (redOrBlack 
-	//G_spawningDrone.image_index = 0;
-
 }
 // Spawn a single 10 line of drones
 function Spawn10by1DroneWave()
