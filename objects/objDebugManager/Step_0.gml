@@ -89,3 +89,25 @@ else if (m_DebugMode == true)
 	objSplinePointLeft16.image_alpha = 1;
 }
 
+// Stops all drones on the screen in their tracks
+if (keyboard_check_pressed(vk_alt))
+{
+	if(objDefiantDrone.m_AttackingState == false)
+	{
+		objDefiantDrone.m_AttackingState = true;
+		objDefiantDrone.m_MovingState = false;
+	}
+	else if (objDefiantDrone.m_AttackingState == true)
+	{
+		objDefiantDrone.m_AttackingState = false;
+		objDefiantDrone.m_MovingState = true;
+	}
+	if(objDroneAiWaveManager.m_canDronesStartMoving == false)
+	{
+		objDroneAiWaveManager.m_canDronesStartMoving = true;
+	}
+	else
+	{
+		objDroneAiWaveManager.m_canDronesStartMoving = false;
+	}
+}

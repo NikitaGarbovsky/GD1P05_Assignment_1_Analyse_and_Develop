@@ -1,15 +1,3 @@
-// Stops all drones on the screen in their tracks
-if (keyboard_check_pressed(vk_alt))
-{
-	if(objDroneAiWaveManager.m_canDronesStartMoving == false)
-	{
-		objDroneAiWaveManager.m_canDronesStartMoving = true;
-	}
-	else
-	{
-		objDroneAiWaveManager.m_canDronesStartMoving = false;
-	}
-}
 // Use the keys 1-4 to spawn various waves of space invaders
 if (keyboard_check_pressed(ord("1")))
 {

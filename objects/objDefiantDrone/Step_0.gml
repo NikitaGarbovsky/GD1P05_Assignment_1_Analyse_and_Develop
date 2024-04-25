@@ -1,4 +1,6 @@
 
+// The moving state of the defiant drone. 
+// Moves through the spline or bezier curve track
 if (m_MovingState == true)
 {
 	// Checks if the drone is on the spline track AND the moving state
@@ -43,9 +45,11 @@ if (m_MovingState == true)
 	else if (m_BezierTrack == true && m_MovingState == true)
 	{
 		travelTime += 1 / objDefiantDroneManager.m_BezierTrackSpeed;
-	
 		var alpha = travelTime / 1;
 	
+		// Checks if the defiant drone is going to move through the right bezier curve track
+		if(m_RightSideTrack == true)
+		{
 		x = math_CubicBezier(rightSplinePoints[0].splinePointX, 
 							rightSplinePoints[1].splinePointX, 
 							rightSplinePoints[2].splinePointX, 
@@ -56,9 +60,34 @@ if (m_MovingState == true)
 								rightSplinePoints[2].splinePointY,
 								rightSplinePoints[3].splinePointY,
 							alpha);
+		}
+		// Checks if the defiant drone is going ot move through the left bezier curve track
+		else if (m_LeftSideTrack == true)
+		{
+		x = math_CubicBezier(leftSplinePoints[0].splinePointX, 
+							leftSplinePoints[1].splinePointX, 
+							leftSplinePoints[2].splinePointX, 
+							leftSplinePoints[3].splinePointX,
+							alpha);
+		y = math_CubicBezier(leftSplinePoints[0].splinePointY, 
+							leftSplinePoints[1].splinePointY,
+							leftSplinePoints[2].splinePointY,
+							leftSplinePoints[3].splinePointY,
+							alpha);
+		}
 	}
 }
-if (m_AttackingState == true)
+// After the shield is destroyed, the defiant drone will move towards the player ship attacking them
+else if (m_AttackingState == true)
 {
+	sprite_index = spr_HostileDefiantDroneEnemy_Sheet;
+	travelTime += 1; 
+	if (travelTime >= 200) // The defiant drone pauses briefly before attacking
+	{
+		// Calculates the speed to lerp towards the player
+		var alpha = travelTime / objDefiantDroneManager.m_LerpTowardsPlayerSpeed;
+		x = math_Lerp(x,objPlayer.x,alpha);
+		y = math_Lerp(y,objPlayer.y,alpha);
+	}
 	
 }
