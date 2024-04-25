@@ -5,7 +5,8 @@ image_speed = 0.1;
 // The total amount of time between 0 - 1 for the object to travel. 
 travelTime = 0;
 
-// An array with all the x & y positions (within 16 structs) of each of the spline objects. 
+// An array with all the x & y positions (within 16 structs) of each of the objects
+// for the right (entry) spline track
 rightSplinePoints = [
 	{
 		splinePointX : objSplinePointRight1.x,
@@ -70,5 +71,73 @@ rightSplinePoints = [
 	{
 		splinePointX : objSplinePointRight16.x,
 		splinePointY : objSplinePointRight16.y,
+	}
+]
+// An array with all the x & y positions (within 16 structs) of each of the objects
+// for the left (entry) spline track
+leftSplinePoints = [
+	{
+		splinePointX : objSplinePointLeft1.x,
+		splinePointY : objSplinePointLeft1.y,
+	},
+	{
+		splinePointX : objSplinePointLeft2.x,
+		splinePointY : objSplinePointLeft2.y,
+	},
+	{
+		splinePointX : objSplinePointLeft3.x,
+		splinePointY : objSplinePointLeft3.y,
+	},
+	{
+		splinePointX : objSplinePointLeft4.x,
+		splinePointY : objSplinePointLeft4.y,
+	},
+	{
+		splinePointX : objSplinePointLeft5.x,
+		splinePointY : objSplinePointLeft5.y,
+	},
+	{
+		splinePointX : objSplinePointLeft6.x,
+		splinePointY : objSplinePointLeft6.y,
+	},
+	{
+		splinePointX : objSplinePointLeft7.x,
+		splinePointY : objSplinePointLeft7.y,
+	},
+	{
+		splinePointX : objSplinePointLeft8.x,
+		splinePointY : objSplinePointLeft8.y,
+	},
+	{
+		splinePointX : objSplinePointLeft9.x,
+		splinePointY : objSplinePointLeft9.y,
+	},
+	{
+		splinePointX : objSplinePointLeft10.x,
+		splinePointY : objSplinePointLeft10.y,
+	},
+	{
+		splinePointX : objSplinePointLeft11.x,
+		splinePointY : objSplinePointLeft11.y,
+	},
+	{
+		splinePointX : objSplinePointLeft12.x,
+		splinePointY : objSplinePointLeft12.y,
+	},
+	{
+		splinePointX : objSplinePointLeft13.x,
+		splinePointY : objSplinePointLeft13.y,
+	},
+	{
+		splinePointX : objSplinePointLeft14.x,
+		splinePointY : objSplinePointLeft14.y,
+	},
+	{
+		splinePointX : objSplinePointLeft15.x,
+		splinePointY : objSplinePointLeft15.y,
+	},
+	{
+		splinePointX : objSplinePointLeft16.x,
+		splinePointY : objSplinePointLeft16.y,
 	}
 ]
