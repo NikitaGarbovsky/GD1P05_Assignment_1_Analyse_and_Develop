@@ -1,5 +1,8 @@
-
-
+// The moving state of the defiant drone. 
+// Moves through the spline or bezier curve track
+if (m_MovingState == true)
+{
+	// checks for collision 
 	if collision_ellipse(x-21,y-74,x+21,y+74, objBasePlayerProjectile, true, true) != noone
 	{
 		instance_destroy(objBasePlayerProjectile);
@@ -7,12 +10,7 @@
 		m_AttackingState = true;
 		m_MovingState = false;
 	}
-
-
-// The moving state of the defiant drone. 
-// Moves through the spline or bezier curve track
-if (m_MovingState == true)
-{
+	
 	// Checks if the drone is on the spline track AND the moving state
 	if(m_SplineTrack == true && m_MovingState == true)
 	{
@@ -90,6 +88,10 @@ if (m_MovingState == true)
 // After the shield is destroyed, the defiant drone will move towards the player ship attacking them
 else if (m_AttackingState == true)
 {
+	if collision_ellipse(x-16,y-61,x+16,y+61, objBasePlayerProjectile, true, true) != noone
+	{
+		instance_destroy(objBasePlayerProjectile);
+	}
 	sprite_index = spr_HostileDefiantDroneEnemy_Sheet;
 	travelTime += 1; 
 	if (travelTime >= 200) // The defiant drone pauses briefly before attacking
