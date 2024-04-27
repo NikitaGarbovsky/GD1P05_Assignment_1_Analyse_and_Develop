@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objSuperChargedPlayerProjectile",
   "spriteId": {
-    "name": "sprSuperChargedBomb",
-    "path": "sprites/sprSuperChargedBomb/sprSuperChargedBomb.yy",
+    "name": "Sprite41",
+    "path": "sprites/Sprite41/Sprite41.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,11 +26,11 @@
   "physicsShapePoints": [],
   "eventList": [],
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vspeed","varType":0,"value":"-2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vspeed","varType":0,"value":"-20","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "GameplayObjects",
-    "path": "folders/Objects/GameplayObjects.yy",
+    "name": "Projectiles",
+    "path": "folders/Objects/GameplayObjects/Projectiles.yy",
   },
 }

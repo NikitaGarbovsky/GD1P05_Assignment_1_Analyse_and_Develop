@@ -1,6 +1,21 @@
 // Control + F to enable Debug mode
 if (keyboard_check(vk_control))
 {
+	if(keyboard_check_pressed(ord("5")))
+	{
+		objPlayer.m_Orbs += 0.2;
+	}
+	if(keyboard_check_pressed(ord("6")))
+	{
+		if(objPlayer.m_Orbs <= 0.2)
+		{
+			
+		}
+		else
+		{
+			objPlayer.m_Orbs -= 0.2;
+		}
+	}
 	if(keyboard_check_pressed(ord("F")))
 	{
 		// Checks if the spline points are visible or not

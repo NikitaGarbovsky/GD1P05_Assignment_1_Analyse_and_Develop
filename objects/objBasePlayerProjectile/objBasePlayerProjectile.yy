@@ -34,7 +34,7 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "GameplayObjects",
-    "path": "folders/Objects/GameplayObjects.yy",
+    "name": "Projectiles",
+    "path": "folders/Objects/GameplayObjects/Projectiles.yy",
   },
 }
