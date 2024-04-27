@@ -36,6 +36,7 @@
     {"id":{"name":"spr_SplineRightSide2","path":"sprites/spr_SplineRightSide2/spr_SplineRightSide2.yy",},"order":9,},
     {"id":{"name":"spr_SplineRightSide8","path":"sprites/spr_SplineRightSide8/spr_SplineRightSide8.yy",},"order":15,},
     {"id":{"name":"sprNeurtralDrone_Sheet","path":"sprites/sprNeurtralDrone_Sheet/sprNeurtralDrone_Sheet.yy",},"order":7,},
+    {"id":{"name":"objReflectedPlayerProjectile","path":"objects/objReflectedPlayerProjectile/objReflectedPlayerProjectile.yy",},"order":3,},
     {"id":{"name":"spr_SplineRightSide3","path":"sprites/spr_SplineRightSide3/spr_SplineRightSide3.yy",},"order":10,},
     {"id":{"name":"spr_SplineRightSide9","path":"sprites/spr_SplineRightSide9/spr_SplineRightSide9.yy",},"order":0,},
     {"id":{"name":"spr_SplineLeftSide11","path":"sprites/spr_SplineLeftSide11/spr_SplineLeftSide11.yy",},"order":2,},

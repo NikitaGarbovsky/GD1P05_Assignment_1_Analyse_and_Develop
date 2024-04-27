@@ -91,7 +91,7 @@ else if (m_AttackingState == true)
 	if collision_ellipse(x-16,y-61,x+16,y+61, objBasePlayerProjectile, true, true) != noone
 	{
 		instance_destroy(objBasePlayerProjectile);
-		instance_destroy(objDefiantDrone);
+		instance_destroy(self);
 	}
 	sprite_index = sprHostileDefiantDroneEnemy;
 	travelTime += 1; 

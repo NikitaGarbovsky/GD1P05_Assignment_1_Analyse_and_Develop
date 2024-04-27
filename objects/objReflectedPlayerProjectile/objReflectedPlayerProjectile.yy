@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objBasePlayerProjectile",
+  "name": "objReflectedPlayerProjectile",
   "spriteId": {
     "name": "sprBasePlayerProjectile",
     "path": "sprites/sprBasePlayerProjectile/sprBasePlayerProjectile.yy",
@@ -35,7 +35,6 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_x2","varType":4,"value":"x + 10","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_y1","varType":4,"value":"y - 5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_y2","varType":4,"value":"y + 5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_ReflectedProjectile","varType":3,"value":"0","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

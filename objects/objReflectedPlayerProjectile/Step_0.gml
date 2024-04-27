@@ -17,21 +17,8 @@ with (objDrone)
 	}
 }
 
-// Checks for collision from the players base attack
-// 
-var enemy = instance_nearest(x, y, objNeutralDrone)
-	if(m_x1 >= enemy.m_NDroneX1 && m_x2 <= enemy.m_NDroneX2 )
-	{
-		if(m_y1 >= enemy.m_NDroneY1 && m_y2 <= enemy.m_NDroneY2 )
-		{
-			instance_destroy(self);
-			enemy.m_DeflectShot = true;
-		}
-	}
 
-
-
-if(y < 0)
+if(y > 1000)
 {
 	instance_destroy();
 }
