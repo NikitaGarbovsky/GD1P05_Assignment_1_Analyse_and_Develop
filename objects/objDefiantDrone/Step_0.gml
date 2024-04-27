@@ -2,7 +2,7 @@
 // Moves through the spline or bezier curve track
 if (m_MovingState == true)
 {
-	// checks for collision 
+	// Checks for collision on the players projectile.
 	if collision_ellipse(x-21,y-74,x+21,y+74, objBasePlayerProjectile, true, true) != noone
 	{
 		instance_destroy(objBasePlayerProjectile);
@@ -101,5 +101,4 @@ else if (m_AttackingState == true)
 		x = math_Lerp(x,objPlayer.x,alpha);
 		y = math_Lerp(y,objPlayer.y,alpha);
 	}
-	
 }
