@@ -13,6 +13,7 @@ with (objDrone)
 		instance_destroy(other);
 	}
 }
+
 if(y < 0)
 {
 	instance_destroy();

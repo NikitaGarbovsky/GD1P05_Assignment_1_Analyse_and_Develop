@@ -91,8 +91,9 @@ else if (m_AttackingState == true)
 	if collision_ellipse(x-16,y-61,x+16,y+61, objBasePlayerProjectile, true, true) != noone
 	{
 		instance_destroy(objBasePlayerProjectile);
+		instance_destroy(objDefiantDrone);
 	}
-	sprite_index = spr_HostileDefiantDroneEnemy_Sheet;
+	sprite_index = sprHostileDefiantDroneEnemy;
 	travelTime += 1; 
 	if (travelTime >= 200) // The defiant drone pauses briefly before attacking
 	{

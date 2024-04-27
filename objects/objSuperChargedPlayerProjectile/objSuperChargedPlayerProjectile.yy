@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objSuperChargedPlayerProjectile",
   "spriteId": {
-    "name": "Sprite41",
-    "path": "sprites/Sprite41/Sprite41.yy",
+    "name": "sprChargedPlayerProjectile",
+    "path": "sprites/sprChargedPlayerProjectile/sprChargedPlayerProjectile.yy",
   },
   "solid": false,
   "visible": true,
