@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objNeutralDroneProjectile",
   "spriteId": {
-    "name": "sprNeutralDroneProjectile",
-    "path": "sprites/sprNeutralDroneProjectile/sprNeutralDroneProjectile.yy",
+    "name": "sprBasePlayerProjectile40",
+    "path": "sprites/sprBasePlayerProjectile40/sprBasePlayerProjectile40.yy",
   },
   "solid": false,
   "visible": true,

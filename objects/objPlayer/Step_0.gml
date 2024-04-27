@@ -12,14 +12,15 @@ if (keyboard_check_pressed(vk_space) && image_index >= 12)
 {
 	instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
 	image_index = 0;
-	image_speed = 0.5;
+	image_speed = m_PlayerShipShootingSpeed;
 }
 
 if !(image_index > 12)
 {
-	image_speed = 0.5;
+	image_speed = m_PlayerShipShootingSpeed;
 }
 else 
 {
 	image_speed = 0;
+	
 }
