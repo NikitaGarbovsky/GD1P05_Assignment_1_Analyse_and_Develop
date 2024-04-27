@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objDefiantDrone",
   "spriteId": {
-    "name": "spr_ShieldedDefiantDroneEnemy_Sheet",
-    "path": "sprites/spr_ShieldedDefiantDroneEnemy_Sheet/spr_ShieldedDefiantDroneEnemy_Sheet.yy",
+    "name": "sprShieldedDefiantDroneEnemy_Sheet",
+    "path": "sprites/sprShieldedDefiantDroneEnemy_Sheet/sprShieldedDefiantDroneEnemy_Sheet.yy",
   },
   "solid": false,
   "visible": true,

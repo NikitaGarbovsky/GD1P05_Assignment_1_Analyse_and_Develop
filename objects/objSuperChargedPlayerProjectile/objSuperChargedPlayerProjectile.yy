@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objNeutralDrone",
+  "name": "objSuperChargedPlayerProjectile",
   "spriteId": {
-    "name": "sprNeurtralDrone_Sheet",
-    "path": "sprites/sprNeurtralDrone_Sheet/sprNeurtralDrone_Sheet.yy",
+    "name": "sprSuperChargedBomb",
+    "path": "sprites/sprSuperChargedBomb/sprSuperChargedBomb.yy",
   },
   "solid": false,
   "visible": true,
@@ -24,12 +24,9 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_DefiantDroneSpinSpeed","varType":0,"value":"0.1","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vspeed","varType":0,"value":"-2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

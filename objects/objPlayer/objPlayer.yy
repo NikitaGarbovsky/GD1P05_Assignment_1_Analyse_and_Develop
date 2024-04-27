@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objPlayer",
   "spriteId": {
-    "name": "sprPlayerShip_Sheet",
-    "path": "sprites/sprPlayerShip_Sheet/sprPlayerShip_Sheet.yy",
+    "name": "sprPlayerShipOrb1",
+    "path": "sprites/sprPlayerShipOrb1/sprPlayerShipOrb1.yy",
   },
   "solid": false,
   "visible": true,
@@ -29,7 +29,8 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_PlayerShipShootingSpeed","varType":0,"value":"0.5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_PlayerShipShootingSpeed","varType":2,"value":"0.2","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_SuperChargedAttack","varType":3,"value":"True","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

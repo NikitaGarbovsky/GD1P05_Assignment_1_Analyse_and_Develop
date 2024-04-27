@@ -1,4 +1,4 @@
-image_speed = 0.2;
+image_speed = m_DefiantDroneSpinSpeed;
 
 x1 = x - 21;
 x2 = x + 22;

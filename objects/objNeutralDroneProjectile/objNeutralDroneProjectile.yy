@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objNeutralDroneProjectile",
   "spriteId": {
-    "name": "sprBasePlayerProjectile40",
-    "path": "sprites/sprBasePlayerProjectile40/sprBasePlayerProjectile40.yy",
+    "name": "sprNeutralDroneProjectile",
+    "path": "sprites/sprNeutralDroneProjectile/sprNeutralDroneProjectile.yy",
   },
   "solid": false,
   "visible": true,
@@ -28,7 +28,7 @@
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
   ],
   "properties": [
-    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vspeed","varType":0,"value":"10","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"vspeed","varType":0,"value":"5","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {
