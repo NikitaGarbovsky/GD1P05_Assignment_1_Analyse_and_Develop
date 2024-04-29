@@ -60,6 +60,7 @@
     {"id":{"name":"objDefiantDroneManager","path":"objects/objDefiantDroneManager/objDefiantDroneManager.yy",},"order":6,},
     {"id":{"name":"scrMathFunctions","path":"scripts/scrMathFunctions/scrMathFunctions.yy",},"order":1,},
     {"id":{"name":"objSplinePointRight13","path":"objects/objSplinePointRight13/objSplinePointRight13.yy",},"order":12,},
+    {"id":{"name":"objButton","path":"objects/objButton/objButton.yy",},"order":10,},
     {"id":{"name":"sprNeutralDroneProjectile","path":"sprites/sprNeutralDroneProjectile/sprNeutralDroneProjectile.yy",},"order":8,},
     {"id":{"name":"objSplinePointLeft3","path":"objects/objSplinePointLeft3/objSplinePointLeft3.yy",},"order":2,},
     {"id":{"name":"objSplinePointRight12","path":"objects/objSplinePointRight12/objSplinePointRight12.yy",},"order":11,},
@@ -112,8 +113,8 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"FreePlayLevel","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},},
     {"roomId":{"name":"MainMenu","path":"rooms/MainMenu/MainMenu.yy",},},
+    {"roomId":{"name":"FreePlayLevel","path":"rooms/FreePlayLevel/FreePlayLevel.yy",},},
     {"roomId":{"name":"MainLevel","path":"rooms/MainLevel/MainLevel.yy",},},
   ],
   "Folders": [

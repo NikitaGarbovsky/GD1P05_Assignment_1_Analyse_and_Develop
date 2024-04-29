@@ -10,6 +10,10 @@ function SpawnProjectileDownward()
 	projectile.vspeed = 15;
 }
 
-
+m_v2Position =
+{ 
+	x : x,
+	y : y 
+};
 
 

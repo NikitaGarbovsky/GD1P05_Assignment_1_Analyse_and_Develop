@@ -47,3 +47,12 @@ function drawCollisionCircle(_a, _b, _r)
 		draw_line_width_color(x_pos, y_pos, x_pos2, y_pos2, 2, c_lime, c_lime);
 	}
 }
+
+function vec2_subtract_rv2(_A, _B)
+{
+	var resultant =
+	{
+		x: _A.x - _B.x, y : _A.y - _B.y	
+	};
+	return resultant;
+}
