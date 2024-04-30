@@ -1,7 +1,7 @@
-var m_x1 = x - 20;
-var m_x2 = x + 20;
-var m_y1 = y - 20;
-var m_y2 = y + 20;
+m_x1 = x - 20;
+m_x2 = x + 20;
+m_y1 = y - 20;
+m_y2 = y + 20;
 
 with (objDrone)
 {
