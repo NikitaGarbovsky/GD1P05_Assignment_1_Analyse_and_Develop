@@ -9,6 +9,7 @@ if (m_MovingState == true)
 		
 		m_AttackingState = true;
 		m_MovingState = false;
+		objPlayer.m_SuperChargedAttack = true;
 	}
 	
 	// Checks if the drone is on the spline track AND the moving state
@@ -92,6 +93,11 @@ else if (m_AttackingState == true)
 	{
 		instance_destroy(objBasePlayerProjectile);
 		instance_destroy(self);
+	}
+	else if collision_ellipse(x-16,y-61,x+16,y+61, objSuperChargedPlayerProjectile, true, true) != noone
+	{
+		instance_destroy(self);
+		objPlayer.m_SuperChargedAttack = false;
 	}
 	sprite_index = sprHostileDefiantDroneEnemy;
 	travelTime += 1; 

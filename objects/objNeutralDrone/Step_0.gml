@@ -13,6 +13,17 @@ m_NDroneX2 = x + 35;
 m_NDroneY1 = y - 51;
 m_NDroneY2 = y + 51;
 
+if instance_exists(objSuperChargedPlayerProjectile)
+{
+	var projectile = instance_nearest(x, y, objSuperChargedPlayerProjectile)
+	if(projectile.m_x1 >= m_NDroneX1 && projectile.m_x2 <= m_NDroneX2 )
+	{
+		if(projectile.m_y1 >= m_NDroneY1 && projectile.m_y2 <= m_NDroneY2 )
+		{
+			instance_destroy();
+		}
+	}
+}
 
 // Switch statement to manage difficulty of this enemy, 
 // which is based off the amount of orbs the player has.

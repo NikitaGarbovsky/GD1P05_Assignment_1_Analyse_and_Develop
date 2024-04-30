@@ -1,4 +1,4 @@
-image_speed = m_DefiantDroneSpinSpeed;
+
 var m_NDroneX1;
 var m_NDroneX1;
 var m_NDroneX1;
