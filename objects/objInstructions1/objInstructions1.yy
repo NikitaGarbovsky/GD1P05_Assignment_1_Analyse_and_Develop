@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objButton",
-  "spriteId": null,
+  "name": "objInstructions1",
+  "spriteId": {
+    "name": "imgInstructions1",
+    "path": "sprites/imgInstructions1/imgInstructions1.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -21,14 +24,11 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
-  ],
+  "eventList": [],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/MainMenu/Buttons.yy",
+    "name": "MainMenu",
+    "path": "folders/Objects/MainMenu.yy",
   },
 }

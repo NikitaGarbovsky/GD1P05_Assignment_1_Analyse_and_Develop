@@ -1,8 +1,11 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "objButton",
-  "spriteId": null,
+  "name": "objMainMenuDrone",
+  "spriteId": {
+    "name": "sprNeurtralDrone_Sheet",
+    "path": "sprites/sprNeurtralDrone_Sheet/sprNeurtralDrone_Sheet.yy",
+  },
   "solid": false,
   "visible": true,
   "managed": true,
@@ -23,12 +26,11 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Buttons",
-    "path": "folders/Objects/MainMenu/Buttons.yy",
+    "name": "MainMenu",
+    "path": "folders/Objects/MainMenu.yy",
   },
 }
