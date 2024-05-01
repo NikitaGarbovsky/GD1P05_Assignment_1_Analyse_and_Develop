@@ -50,6 +50,7 @@ switch (objPlayer.m_Orbs)
 if(self.m_DeflectShot == true)
 {
 	SpawnProjectileDownward();
+	audio_play_sound(m_SoundDeflectLaserProjectile,0,0)
 	self.m_DeflectShot = false;
 }
 

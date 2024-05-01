@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "objPlayer",
   "spriteId": {
-    "name": "sprPlayerShipOrb1",
-    "path": "sprites/sprPlayerShipOrb1/sprPlayerShipOrb1.yy",
+    "name": "sprPlayerShipOrb1_Sheet",
+    "path": "sprites/sprPlayerShipOrb1_Sheet/sprPlayerShipOrb1_Sheet.yy",
   },
   "solid": false,
   "visible": true,

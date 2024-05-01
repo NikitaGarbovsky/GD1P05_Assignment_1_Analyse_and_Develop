@@ -10,10 +10,11 @@ if (m_MovingState == true)
 		m_AttackingState = true;
 		m_MovingState = false;
 		objPlayer.m_SuperChargedAttack = true;
+		audio_play_sound(m_SoundDestroyShield,0,0);
 	}
 	if collision_ellipse(x-21,y-74,x+21,y+74, objDrone, true, true) != noone
 	{
-		
+		//TODO Apply the 
 		
 	}
 	

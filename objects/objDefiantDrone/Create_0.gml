@@ -1,4 +1,5 @@
 
+audio_play_sound(m_SoundEnergyHum,0,true);
 // The framerate of the spritesheet that is attached to this object.
 image_speed = 0.1;
  

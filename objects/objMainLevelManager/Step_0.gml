@@ -1,5 +1,4 @@
 
-
 if(keyboard_check(vk_escape))
 {
 	room_goto(MainMenu);
@@ -22,24 +21,43 @@ if (objPlayer.m_Orbs == 1)
 	}
 	else if (m_CompletedIntro2 == true && m_CompletedLevel1 == false)
 	{
-		var spawned = false;
-		if (timer % 950 = 0)
-		{
-			
-			if (spawned == false)
+		if (m_spawned1 == false)
 			{	
-				var defiantDroneInstance = instance_create_layer(-134, 770, layer, objDefiantDrone)
-				defiantDroneInstance.m_RightSideTrack = true;
-				defiantDroneInstance.m_LeftSideTrack = false;
-				if !instance_exists(objNeutralDrone)
+				if (timer % 50 = 0)
 				{
 					instance_create_layer(1050, 600, layer, objNeutralDrone)
-				}
-				spawned = true;
+					m_spawned1 = true;
+				}	
 			}
-			else if !instance_exists(objDefiantDrone)
+			if (m_spawned2 == false)
+			{	
+				if (timer % 250 = 0)
+				{
+					instance_create_layer(-50, 300, layer, objNeutralDrone)
+					m_spawned2 = true;
+				}
+			}	
+			if (m_spawned3 == false)
+			{	
+				if (timer % 350 = 0)
+				{
+					instance_create_layer(-50, 600, layer, objNeutralDrone)
+					m_spawned3 = true;
+				}
+			}	
+			if (m_spawned4 == false)
+			{	
+				if (timer % 400 = 0)
+				{
+					instance_create_layer(1050, 300, layer, objNeutralDrone)
+					m_spawned4 = true;
+				}
+			}
+		if (timer % 1000 = 0)
+		{
+			if !instance_exists(objDefiantDrone)
 			{
-				instance_create_layer(-134, 770, layer, objDefiantDrone)
+				var defiantDroneInstance = instance_create_layer(-134, 770, layer, objDefiantDrone)
 				defiantDroneInstance.m_RightSideTrack = true;
 				defiantDroneInstance.m_LeftSideTrack = false;
 			}

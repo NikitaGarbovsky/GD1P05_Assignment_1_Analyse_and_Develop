@@ -69,27 +69,32 @@ switch (m_Orbs)
 {
 	case 1:
 	{
-		m_PlayerShipShootingSpeed = 0.2
+		m_PlayerShipShootingSpeed = 0.2;
+		sprite_index = sprPlayerShipOrb1_Sheet;
 		break;
 	}
 	case 2:
 	{
-		m_PlayerShipShootingSpeed = 0.4
+		m_PlayerShipShootingSpeed = 0.4;
+		sprite_index = sprPlayerShipOrb2_Sheet;
 		break;
 	}
 	case 3:
 	{
-		m_PlayerShipShootingSpeed = 0.6
+		m_PlayerShipShootingSpeed = 0.6;
+		sprite_index = sprPlayerShipOrb3_Sheet;
 		break;
 	}
 	case 4:
 	{
-		m_PlayerShipShootingSpeed = 0.8
+		m_PlayerShipShootingSpeed = 0.8;
+		sprite_index = sprPlayerShipOrb4_Sheet;
 		break;
 	}
 	case 5:
 	{
-		m_PlayerShipShootingSpeed = 1
+		m_PlayerShipShootingSpeed = 1;
+		sprite_index = sprPlayerShipOrb5_Sheet;
 		break;
 	}
 }
