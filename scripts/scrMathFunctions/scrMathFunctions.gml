@@ -1,9 +1,10 @@
-// The main Lerp function used 
+// Used to move the aggressive defiant drone towards the player
 function math_Lerp(_start,_end,_alpha)
 {
 	var result = _start + (_end - _start) * _alpha;
 	return result;
 }
+
 function math_QuadraticBezier(_p0, _p1, _p2, _alpha)
 {
 	var lerp1 = math_Lerp(_p0, _p1, _alpha);
@@ -12,6 +13,7 @@ function math_QuadraticBezier(_p0, _p1, _p2, _alpha)
 	var result = math_Lerp(lerp1, lerp2, _alpha);
 	return result;
 }
+// Used to move along the spline and bezier curve tracks 
 function math_CubicBezier(_p0,_p1,_p2,_p3, _alpha)
 {
 	var bezier1 = math_QuadraticBezier(_p0, _p1, _p2, _alpha);
@@ -20,6 +22,7 @@ function math_CubicBezier(_p0,_p1,_p2,_p3, _alpha)
 	var result = math_Lerp(bezier1, bezier2, _alpha);
 	return result;
 }
+// Returns the distance between two objects positions
 function getDistance(_x1,_y1,_x2,_y2)
 {
 	var x3 = _x2 - _x1;
@@ -33,6 +36,7 @@ function getDistance(_x1,_y1,_x2,_y2)
 	
 	return distance;
 }
+// Used when debugging to view circular collisions on the drones
 function drawCollisionCircle(_a, _b, _r)
 {
 	var x_pos, x_pos2, y_pos, y_pos2;
@@ -47,12 +51,44 @@ function drawCollisionCircle(_a, _b, _r)
 		draw_line_width_color(x_pos, y_pos, x_pos2, y_pos2, 2, c_lime, c_lime);
 	}
 }
-
-function vec2_subtract_rv2(_A, _B)
+function vec2Add(_A,_B)
+{
+	_A.x += _B.x;
+	_A.y += _B.y;
+}
+function vec2AddRv2(_A, _B)
+{
+	var resultant = 
+	{ 
+		x : _A.x + _B.x, 
+		y : _A.y + _B.y
+	};
+	return resultant;
+}
+function vec2Subtract(_A,_B)
+{
+	_A.x -= _B.x;
+	_A.y -= _B.y;
+}
+function vec2SubtractRv2(_A, _B)
 {
 	var resultant =
 	{
 		x: _A.x - _B.x, y : _A.y - _B.y	
 	};
 	return resultant;
+}
+function vec2ScalarMultiplyRv2(_A, _scalar)
+{
+	var resultant =
+	{
+		x : _A.x * _scalar, y : _A.y * _scalar	
+	};
+	return resultant;
+}
+function getAngleFacingPointDeg(_opposite, _adjacent)
+{
+	var theta = arctan2(-_opposite, _adjacent);
+	theta = radtodeg(theta);
+	return theta;
 }

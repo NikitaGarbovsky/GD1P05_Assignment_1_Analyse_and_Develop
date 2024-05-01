@@ -1,5 +1,5 @@
 // Sets the speed of going through sprite frame.
-image_speed = m_DefiantDroneSpinSpeed;
+image_speed = m_NeutralDroneSpinSpeed;
 
 // Shoots a projectile towards the player at the end of the sprite_sheet frames.
 if (image_index >= 11 && image_index < 11.3)
@@ -24,25 +24,26 @@ if instance_exists(objSuperChargedPlayerProjectile)
 		}
 	}
 }
+//TODO add movement of the neutral drone here
 
 // Switch statement to manage difficulty of this enemy, 
 // which is based off the amount of orbs the player has.
 switch (objPlayer.m_Orbs)
 {
 	case 1 :
-	m_DefiantDroneSpinSpeed = 0.1;
+	m_NeutralDroneSpinSpeed = 0.1;
 	break;
 	case 2 :
-	m_DefiantDroneSpinSpeed = 0.2;
+	m_NeutralDroneSpinSpeed = 0.2;
 	break;
 	case 3 :
-	m_DefiantDroneSpinSpeed = 0.3;
+	m_NeutralDroneSpinSpeed = 0.3;
 	break;
 	case 4 : 
-	m_DefiantDroneSpinSpeed = 0.4;
+	m_NeutralDroneSpinSpeed = 0.4;
 	break;
 	case 5 :
-	m_DefiantDroneSpinSpeed = 0.5;
+	m_NeutralDroneSpinSpeed = 0.5;
 	break;
 }
 

@@ -6,14 +6,10 @@ var m_NDroneX1;
 
 function SpawnProjectileDownward()
 {
-	var projectile = instance_create_layer(x, y-30, layer, objReflectedPlayerProjectile);
-	projectile.vspeed = 15;
+	var projectile = instance_create_layer(x, y+20, "Layer_SplineTrackRight", objReflectedPlayerProjectile);
+	projectile.image_angle = image_angle;
 }
 
-m_v2Position =
-{ 
-	x : x,
-	y : y 
-};
+
 
 
