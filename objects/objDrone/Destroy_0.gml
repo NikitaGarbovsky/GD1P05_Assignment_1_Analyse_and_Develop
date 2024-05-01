@@ -1,3 +1,6 @@
+
+// These are all the conditions to move to the next wave or level in the main game.
+// The condition for progressing in the game is to destroy the wave of drones.
 var droneCount = instance_number(objDrone);
 if(droneCount == 1)
 {
@@ -42,7 +45,7 @@ else
 	}
 }
 
-
+audio_play_sound(soundDroneDestroy,0,0);
 
 
 

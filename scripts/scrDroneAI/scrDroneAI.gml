@@ -57,6 +57,7 @@ function HasRightSideBeenReached() // Checks if any drones have reached the righ
 // Spawns a drone at a desired location, this is used by all the spawning wave functions below
 function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 {
+	audio_play_sound(soundSpawnDrones,0,0);
 	var dronesAreMovingRight = true;
 	var dronesAreMovingLeft = true;
 	

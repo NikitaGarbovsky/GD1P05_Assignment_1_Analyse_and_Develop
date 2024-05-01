@@ -12,9 +12,25 @@ if (m_MovingState == true)
 		objPlayer.m_SuperChargedAttack = true;
 		audio_play_sound(m_SoundDestroyShield,0,0);
 	}
+	if collision_ellipse(x-21,y-74,x+21,y+74, objReflectedPlayerProjectile, true, true) != noone
+	{
+		instance_destroy(objReflectedPlayerProjectile);
+		
+		m_AttackingState = true;
+		m_MovingState = false;
+		objPlayer.m_SuperChargedAttack = true;
+		audio_play_sound(m_SoundDestroyShield,0,0);
+	}
+	// Checks for collision with drones to apply a shield to them
 	if collision_ellipse(x-21,y-74,x+21,y+74, objDrone, true, true) != noone
 	{
-		//TODO Apply the collision for the drone
+		var collidedDrone = instance_nearest(x,y,objDrone)
+		if (collidedDrone.m_droneIsShielded == false)
+		{
+			collidedDrone.m_droneIsShielded = true;
+			audio_play_sound(soundDroneGainShield,0,0)
+		}
+		
 		
 	}
 	

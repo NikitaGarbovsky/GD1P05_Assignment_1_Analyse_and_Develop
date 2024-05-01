@@ -13,7 +13,14 @@ with (objDrone)
 	// If this distance is less than (drone radius plus this projectile radius)
 	if (dist < (m_droneCollisionRadius + other.m_basePlayerProjectileRadius))
 	{	// Do damage
-		m_droneHitPoints -= other.m_basePlayerProjectileDamage;
+		if(m_droneIsShielded == true)
+		{
+			m_droneIsShielded = false;
+		}
+		else 
+		{
+			m_droneHitPoints -= other.m_basePlayerProjectileDamage;
+		}
 		instance_destroy(other);
 	}
 }

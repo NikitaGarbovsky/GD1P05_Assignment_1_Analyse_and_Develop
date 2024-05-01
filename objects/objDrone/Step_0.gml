@@ -13,4 +13,12 @@ else {
 	// By default drones spawn with no alpha, so we increase the alpha to make them visible.
 	image_alpha += 0.003;
 }
-
+// Changes the sprite of the drone if they are shielded
+if(m_droneIsShielded == true)
+{
+	sprite_index = sprShieldedDroneEnemy_Sheet;
+}
+else 
+{
+	sprite_index = sprDroneEnemy_Sheet;
+}
