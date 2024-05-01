@@ -10,14 +10,73 @@ if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 // Launch projectile/s at player ship location
 if (keyboard_check_pressed(vk_space) && image_index >= 12) 
 {
+	switch (m_Orbs)
+	{
+		case 1:
+		{
+			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			image_index = 0;
+			break;
+		}
+		case 2:
+		{
+			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			break;
+		}
+		case 3:
+		{
+			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			break;
+			
+		}
+		case 4:
+		{
+			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 57, y, layer, objBasePlayerProjectile);
+			image_index = 0;
+			break;
+		}
+		case 5:
+		{
+			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x - 57, y, layer, objBasePlayerProjectile);
+			image_index = 0;
+			
+			instance_create_layer(x + 57, y, layer, objBasePlayerProjectile);
+			image_index = 0;
+			break;
+		}
+	}
 	if(m_SuperChargedAttack == true)
 	{
 		instance_create_layer(x, y-30, layer, objSuperChargedPlayerProjectile);
-		image_index = 0;
-	}
-	else
-	{
-		instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
 		image_index = 0;
 	}
 }

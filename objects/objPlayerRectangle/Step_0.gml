@@ -2,7 +2,7 @@
 image_speed = m_PlayerRectangleSpinSpeed;
 
 // Manages where the rectangle is located at all times,
-// based on which order of rectangle 
+// based on which order of rectangles it is from 1-4.
 switch (m_RectangleOrder)
 {
 	case 1 : 
@@ -30,6 +30,7 @@ switch (m_RectangleOrder)
 		break;
 	}
 }
+// Changes the speed of the rectangle based off the amount of orbs the player has
 switch (objPlayer.m_Orbs)
 {
 	case 1 :
@@ -74,6 +75,20 @@ switch (objPlayer.m_Orbs)
 		break;
 }
 
+// Sets the rectangular collision coordinates of this object.
+m_NDroneX1 = x - 35;
+m_NDroneX2 = x + 35;
+m_NDroneY1 = y - 51;
+m_NDroneY2 = y + 51;
 
-
-
+if instance_exists(objBasePlayerProjectile)
+{
+	var projectile = instance_nearest(x, y, objBasePlayerProjectile)
+	if(projectile.m_x1 >= m_NDroneX1 && projectile.m_x2 <= m_NDroneX2 )
+	{
+		if(projectile.m_y1 >= m_NDroneY1 && projectile.m_y2 <= m_NDroneY2 )
+		{
+			
+		}
+	}
+}
