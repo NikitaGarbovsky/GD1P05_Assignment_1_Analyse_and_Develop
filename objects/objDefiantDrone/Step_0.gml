@@ -11,6 +11,7 @@ if (m_MovingState == true)
 		m_MovingState = false;
 		objPlayer.m_SuperChargedAttack = true;
 		audio_play_sound(m_SoundDestroyShield,0,0);
+		audio_play_sound(m_SoundDefiantDroneAlarm, 0, 0);
 	}
 	if collision_ellipse(x-21,y-74,x+21,y+74, objReflectedPlayerProjectile, true, true) != noone
 	{
@@ -20,6 +21,7 @@ if (m_MovingState == true)
 		m_MovingState = false;
 		objPlayer.m_SuperChargedAttack = true;
 		audio_play_sound(m_SoundDestroyShield,0,0);
+		audio_play_sound(m_SoundDefiantDroneAlarm, 0, 0);
 	}
 	// Checks for collision with drones to apply a shield to them
 	if collision_ellipse(x-21,y-74,x+21,y+74, objDrone, true, true) != noone
@@ -30,14 +32,10 @@ if (m_MovingState == true)
 			collidedDrone.m_droneIsShielded = true;
 			audio_play_sound(soundDroneGainShield,0,0)
 		}
-		
-		
 	}
-	
 	// Checks if the drone is on the spline track AND the moving state
 	if(m_SplineTrack == true && m_MovingState == true)
 	{
-		
 		travelTime += 1 / objDefiantDroneManager.m_SplineTrackSpeed;
 
 		var normalizedTravelTime = travelTime % 1;

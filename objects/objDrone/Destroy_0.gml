@@ -46,6 +46,7 @@ else
 }
 
 audio_play_sound(soundDroneDestroy,0,0);
+objMainLevelManager.m_DronesDestroyed = objMainLevelManager.m_DronesDestroyed + 1;
 
 
 

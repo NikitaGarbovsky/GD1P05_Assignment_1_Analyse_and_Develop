@@ -13,6 +13,7 @@ with (objPlayer)
 	if (dist < (m_PlayerShipCollisionRadius + other.m_NeutralDroneProjectileRadius))
 	{	
 		instance_destroy(other);
+		objMainLevelManager.m_HitsTaken = objMainLevelManager.m_HitsTaken + 1;
 	}
 }
 if instance_exists(objPlayerRectangle)
@@ -25,6 +26,7 @@ if instance_exists(objPlayerRectangle)
 			instance_destroy();
 			audio_play_sound(soundDeflectLaserProjectile,0,0)
 			reflector.m_DeflectShot = true;
+			objMainLevelManager.m_LasersReflected = objMainLevelManager.m_LasersReflected + 1;
 		}
 	}
 }

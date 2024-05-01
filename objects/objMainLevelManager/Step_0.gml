@@ -145,7 +145,7 @@ if (objPlayer.m_Orbs == 2)
 			var defiantDroneInstance = instance_create_layer(-134, 770, layer, objDefiantDrone)
 			defiantDroneInstance.m_RightSideTrack = false;
 			defiantDroneInstance.m_LeftSideTrack = true;
-			objDefiantDroneManager.m_SplineTrackSpeed = 150
+			objDefiantDroneManager.m_SplineTrackSpeed = 175
 		}
 		if !instance_exists(objDrone)
 		{
@@ -161,7 +161,7 @@ if (objPlayer.m_Orbs == 2)
 			var defiantDroneInstance = instance_create_layer(-134, 770, layer, objDefiantDrone)
 			defiantDroneInstance.m_RightSideTrack = true;
 			defiantDroneInstance.m_LeftSideTrack = false;
-			objDefiantDroneManager.m_SplineTrackSpeed = 50
+			objDefiantDroneManager.m_SplineTrackSpeed = 150
 			if !instance_exists(objNeutralDrone)
 			{
 				instance_create_layer(-50, 600, layer, objNeutralDrone)

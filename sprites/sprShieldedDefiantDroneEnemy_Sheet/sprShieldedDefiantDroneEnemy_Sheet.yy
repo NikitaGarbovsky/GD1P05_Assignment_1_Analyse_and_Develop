@@ -3,7 +3,7 @@
   "resourceVersion": "1.0",
   "name": "sprShieldedDefiantDroneEnemy_Sheet",
   "bboxMode": 0,
-  "collisionKind": 2,
+  "collisionKind": 1,
   "type": 0,
   "origin": 4,
   "preMultiplyAlpha": false,
@@ -28,8 +28,8 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9d107c9b-2dc7-4d85-8efb-18ad18e551f1",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"7a174d5d-e72f-4b62-819d-6bc374d02e92",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"cfa14846-cf9e-4806-a9fc-aecea3b7343f",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0902fc72-bf29-40ab-bc13-93b67f0bb0ba",},
   ],
   "sequence": {
     "resourceType": "GMSequence",
@@ -46,8 +46,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"0b38cfd8-b8f9-4eea-a3ea-97c7c8ea2275","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"9d107c9b-2dc7-4d85-8efb-18ad18e551f1","path":"sprites/sprShieldedDefiantDroneEnemy_Sheet/sprShieldedDefiantDroneEnemy_Sheet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"8e4bcb20-a445-4a8c-a46e-8b65125f14e7","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"7a174d5d-e72f-4b62-819d-6bc374d02e92","path":"sprites/sprShieldedDefiantDroneEnemy_Sheet/sprShieldedDefiantDroneEnemy_Sheet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"ff067d41-edc7-4234-a07c-1f1be9c017a8","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"cfa14846-cf9e-4806-a9fc-aecea3b7343f","path":"sprites/sprShieldedDefiantDroneEnemy_Sheet/sprShieldedDefiantDroneEnemy_Sheet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"00d31d96-7f67-4942-a239-46574d979af0","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0902fc72-bf29-40ab-bc13-93b67f0bb0ba","path":"sprites/sprShieldedDefiantDroneEnemy_Sheet/sprShieldedDefiantDroneEnemy_Sheet.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
@@ -66,7 +66,7 @@
     "eventStubScript": null,
   },
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"32943593-83ab-4a63-bab6-ac0cc049b7d2","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"8c10b2ac-1a93-4217-af8d-85d2d2b949fa","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {

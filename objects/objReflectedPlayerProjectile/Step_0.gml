@@ -3,7 +3,15 @@ var m_x2 = x + 10;
 var m_y1 = y - 5;
 var m_y2 = y + 5;
 
-
+with (objPlayer)
+{
+	var dist = getDistance(x,y,other.x, other.y);
+	if (dist < (m_PlayerShipCollisionRadius + other.m_basePlayerProjectileRadius))
+	{	
+		instance_destroy(other);
+		objMainLevelManager.m_HitsTaken = objMainLevelManager.m_HitsTaken + 1;
+	}
+}
 with (objDrone)
 {
 	// This code utilizes a basic form of circular collisions using a distance vs distance measurement
@@ -34,6 +42,7 @@ if instance_exists(objPlayerRectangle)
 			instance_destroy();
 			audio_play_sound(soundDeflectLaserProjectile,0,0)
 			reflector.m_DeflectShot = true;
+			objMainLevelManager.m_LasersReflected = objMainLevelManager.m_LasersReflected + 1;
 		}
 	}
 }
