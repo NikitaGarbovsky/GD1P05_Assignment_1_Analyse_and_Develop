@@ -14,62 +14,41 @@ if (keyboard_check_pressed(vk_space) && image_index >= 12)
 	{
 		case 1:
 		{
-			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
+			ShootBaseShot();
 			image_index = 0;
 			break;
 		}
 		case 2:
 		{
-			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
+			ShootBaseShot();
+			ShootSecondShot();
 			image_index = 0;
 			break;
 		}
 		case 3:
 		{
-			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
+			ShootBaseShot();
+			ShootSecondShot();
+			ShootThirdShot();
 			image_index = 0;
 			break;
-			
 		}
 		case 4:
 		{
-			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 57, y, layer, objBasePlayerProjectile);
+			ShootBaseShot();
+			ShootSecondShot();
+			ShootThirdShot();
+			ShootFourthShot();
 			image_index = 0;
 			break;
 		}
 		case 5:
 		{
-			instance_create_layer(x, y-30, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 34, y - 27, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x + 34, y - 27, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x - 57, y, layer, objBasePlayerProjectile);
-			image_index = 0;
-			
-			instance_create_layer(x + 57, y, layer, objBasePlayerProjectile);
+			ShootBaseShot();
+			ShootSecondShot();
+			ShootThirdShot();
+			ShootFourthShot();
+			ShootFifthShot();
 			image_index = 0;
 			break;
 		}
