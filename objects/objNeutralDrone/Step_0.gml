@@ -4,7 +4,8 @@ image_speed = m_NeutralDroneSpinSpeed;
 // Shoots a projectile towards the player at the end of the sprite_sheet frames.
 if (image_index >= 11 && image_index < 11.3)
 {
-	instance_create_layer(x+3, y-30, layer_get_id("Layer_SplineTrackRight"), objNeutralDroneProjectile);	
+	instance_create_layer(x+3, y-30, layer_get_id("Layer_SplineTrackRight"), objNeutralDroneProjectile);
+	image_index = 0;
 }
 
 // Sets the rectangular collision coordinates of this object.

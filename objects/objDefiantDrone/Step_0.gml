@@ -14,7 +14,7 @@ if (m_MovingState == true)
 	}
 	if collision_ellipse(x-21,y-74,x+21,y+74, objDrone, true, true) != noone
 	{
-		//TODO Apply the 
+		//TODO Apply the collision for the drone
 		
 	}
 	
