@@ -1,11 +1,9 @@
-
 if (keyboard_check(vk_left) || keyboard_check(ord("A")))
 {
 	if(x >= 100)
 	{
 		x -= m_PlayerShipMovementSpeed;	
 	}
-	
 }
 if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 {
@@ -13,7 +11,6 @@ if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 	{
 		x += m_PlayerShipMovementSpeed;	
 	}
-	
 }
 // Launch projectile/s at player ship location
 if (keyboard_check_pressed(vk_space) && image_index >= 12) 
@@ -63,6 +60,7 @@ if (keyboard_check_pressed(vk_space) && image_index >= 12)
 	}
 	if(m_SuperChargedAttack == true)
 	{
+		audio_play_sound(m_SuperChargedAttackSound, 0,0);
 		instance_create_layer(x, y-30, layer, objSuperChargedPlayerProjectile);
 		image_index = 0;
 	}

@@ -11,6 +11,11 @@ if (m_MovingState == true)
 		m_MovingState = false;
 		objPlayer.m_SuperChargedAttack = true;
 	}
+	if collision_ellipse(x-21,y-74,x+21,y+74, objDrone, true, true) != noone
+	{
+		
+		
+	}
 	
 	// Checks if the drone is on the spline track AND the moving state
 	if(m_SplineTrack == true && m_MovingState == true)
