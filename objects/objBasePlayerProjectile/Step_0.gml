@@ -3,11 +3,20 @@ var m_x2 = x + 10;
 var m_y1 = y - 5;
 var m_y2 = y + 5;
 
-UpwardDirection1 = { x : -5, y : 0 };
-UpwardDirection2 = { x : -4.5, y : -5 };
-UpwardDirection3 = { x : 0, y : -15 };
-UpwardDirection4 = { x : 4.5, y : -5 };
-UpwardDirection5 = { x : 5, y : 0 };
+UpwardDirection2 = { x : -5, y : -9 };
+UpwardDirection3 = { x : 0, y : -10 };
+UpwardDirection4 = { x : 5, y : -9 };
+if(m_ShotFromPlayer == true)
+{
+	UpwardDirection1 = { x : -5, y : 0 };
+	UpwardDirection5 = { x : 5, y : 0 };
+}
+else
+{
+	UpwardDirection1 = { x : -5, y : -10 };
+	UpwardDirection5 = { x : 5, y : -10 };
+}
+
 
 with (objDrone)
 {
@@ -86,7 +95,7 @@ if instance_exists(objNeutralDrone)
 }
 if instance_exists(objPlayerRectangle)
 {
-	var enemy = instance_nearest(x, y, objNeutralDrone)
+	var enemy = instance_nearest(x, y, objPlayerRectangle)
 	if(m_x1 >= enemy.m_NDroneX1 && m_x2 <= enemy.m_NDroneX2 )
 	{
 		if(m_y1 >= enemy.m_NDroneY1 && m_y2 <= enemy.m_NDroneY2 )

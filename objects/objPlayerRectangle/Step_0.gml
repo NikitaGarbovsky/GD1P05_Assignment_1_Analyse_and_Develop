@@ -30,23 +30,13 @@ switch (m_RectangleOrder)
 		break;
 	}
 }
-// Changes the speed of the rectangle based off the amount of orbs the player has
+// Changes the spin speed of the rectangles based off the amount of orbs the player has
 switch (objPlayer.m_Orbs)
 {
-	case 1 :
-		if (m_RectangleOrder == 1 || m_RectangleOrder == 3)
-		{
-			m_PlayerRectangleSpinSpeed = -0.1;
-		}
-		else
-		{
-			m_PlayerRectangleSpinSpeed = 0.1;
-		}
-		break;
 	case 2 :
 		if (m_RectangleOrder == 1 || m_RectangleOrder == 3)
 		{
-			m_PlayerRectangleSpinSpeed = -0.2;
+			m_PlayerRectangleSpinSpeed = - 0.2;
 		}
 		else
 		{
@@ -63,7 +53,7 @@ switch (objPlayer.m_Orbs)
 			m_PlayerRectangleSpinSpeed = 0.3;
 		}
 		break;
-	case 4 : 
+	case 4 :
 		if (m_RectangleOrder == 1 || m_RectangleOrder == 3)
 		{
 			m_PlayerRectangleSpinSpeed = -0.4;
@@ -71,6 +61,16 @@ switch (objPlayer.m_Orbs)
 		else
 		{
 			m_PlayerRectangleSpinSpeed = 0.4;
+		}
+		break;
+	case 5 : 
+		if (m_RectangleOrder == 1 || m_RectangleOrder == 3)
+		{
+			m_PlayerRectangleSpinSpeed = -0.5;
+		}
+		else
+		{
+			m_PlayerRectangleSpinSpeed = 0.5;
 		}
 		break;
 }
@@ -81,14 +81,8 @@ m_NDroneX2 = x + 35;
 m_NDroneY1 = y - 51;
 m_NDroneY2 = y + 51;
 
-if instance_exists(objBasePlayerProjectile)
+if(self.m_DeflectShot == true)
 {
-	var projectile = instance_nearest(x, y, objBasePlayerProjectile)
-	if(projectile.m_x1 >= m_NDroneX1 && projectile.m_x2 <= m_NDroneX2 )
-	{
-		if(projectile.m_y1 >= m_NDroneY1 && projectile.m_y2 <= m_NDroneY2 )
-		{
-			
-		}
-	}
+	SpawnProjectileUpward();
+	self.m_DeflectShot = false;
 }

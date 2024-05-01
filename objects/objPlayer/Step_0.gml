@@ -1,11 +1,19 @@
 
 if (keyboard_check(vk_left) || keyboard_check(ord("A")))
 {
-	x -= m_PlayerShipMovementSpeed;	
+	if(x >= 100)
+	{
+		x -= m_PlayerShipMovementSpeed;	
+	}
+	
 }
 if (keyboard_check(vk_right) || keyboard_check(ord("D")))
 {
-	x += m_PlayerShipMovementSpeed;	
+	if(x <= 900)
+	{
+		x += m_PlayerShipMovementSpeed;	
+	}
+	
 }
 // Launch projectile/s at player ship location
 if (keyboard_check_pressed(vk_space) && image_index >= 12) 

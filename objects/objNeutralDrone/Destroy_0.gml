@@ -5,6 +5,7 @@ switch (objPlayer.m_Orbs)
 		objPlayer.m_Orbs = 2;
 		var FirstRectangle = instance_create_layer(x,y,layer,objPlayerRectangle)
 		FirstRectangle.m_RectangleOrder = 1;
+		objMainLevelManager.m_CompletedLevel1 = true;
 		break;
 	}
 	case 2 :
@@ -29,3 +30,4 @@ switch (objPlayer.m_Orbs)
 		break;	
 	}
 }
+objMainLevelManager.m_wavesHaveBeenReset = false;

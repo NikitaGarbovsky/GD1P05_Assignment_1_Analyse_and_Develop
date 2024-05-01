@@ -46,11 +46,18 @@ switch (objPlayer.m_Orbs)
 	m_NeutralDroneSpinSpeed = 0.5;
 	break;
 }
-
+// Activates the deflecting of shots 
 if(self.m_DeflectShot == true)
 {
 	SpawnProjectileDownward();
 	self.m_DeflectShot = false;
 }
 
+if (getDistance(x, y, moveToX, moveToY) < 40)
+{
+	moveToX = irandom(room_width);
+	moveToY = irandom(800);
+	move_towards_point(moveToX, moveToY, m_NeutralDroneMovementSpeed);
+}
+	
 

@@ -20,9 +20,11 @@ ShootFourthShot = function()
 {
 	var fourthShot = instance_create_layer(x - 57, y, layer, objBasePlayerProjectile);
 	fourthShot.m_UpwardDirectionNumber = 1;
+	fourthShot.m_ShotFromPlayer = true;
 }
 ShootFifthShot = function()
 {
 	var fifthShot = instance_create_layer(x + 57, y, layer, objBasePlayerProjectile);
 	fifthShot.m_UpwardDirectionNumber = 5;
+	fifthShot.m_ShotFromPlayer = true;
 }
