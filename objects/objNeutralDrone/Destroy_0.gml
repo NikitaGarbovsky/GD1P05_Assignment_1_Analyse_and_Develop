@@ -29,6 +29,10 @@ switch (objPlayer.m_Orbs)
 	}
 	case 4 :
 	{
+		with(objNeutralDrone)
+		{
+			instance_destroy();
+		}
 		objPlayer.m_Orbs = 5;
 		var FirstRectangle = instance_create_layer(x,y,layer,objPlayerRectangle)
 		FirstRectangle.m_RectangleOrder = 4;

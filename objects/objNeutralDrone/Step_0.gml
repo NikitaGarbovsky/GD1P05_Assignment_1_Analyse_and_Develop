@@ -63,7 +63,8 @@ if(self.m_DeflectShot == true)
 if (getDistance(x, y, moveToX, moveToY) < 40)
 {
 	moveToX = irandom(room_width);
-	moveToY = irandom(800);
+	moveToY = irandom_range(300,550);
+
 	move_towards_point(moveToX, moveToY, m_NeutralDroneMovementSpeed);
 }
 	

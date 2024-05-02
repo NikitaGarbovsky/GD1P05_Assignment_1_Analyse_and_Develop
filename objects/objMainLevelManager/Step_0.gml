@@ -222,10 +222,10 @@ if instance_exists(objPlayer)
 	if (objPlayer.m_Orbs == 3)
 	{
 		if (m_Waves != 1 && m_wavesHaveBeenReset == false)
-			{
-				Reset_Waves();
-				m_wavesHaveBeenReset = true;
-			}
+		{
+			Reset_Waves();
+			m_wavesHaveBeenReset = true;
+		}
 		// Step 6 (Wave 1)
 		if (m_Waves == 1)
 		{
@@ -349,7 +349,6 @@ if instance_exists(objPlayer)
 				Spawn10by4DroneWave();
 				objDroneAiWaveManager.m_enemyMovespeed = 12;
 				objDroneAiWaveManager.m_droneHorizontalMovement = 20;
-				
 			}
 			if !instance_exists(objNeutralDrone)
 			{
@@ -357,13 +356,123 @@ if instance_exists(objPlayer)
 			}
 		}
 	}
+	// LEVEL 4
+	// Step 7
 	if (objPlayer.m_Orbs == 4)
 	{
-		if !instance_exists(objDrone)
+		if (m_Waves != 1 && m_wavesHaveBeenReset == false)
 		{
+			Reset_Waves();
+			m_wavesHaveBeenReset = true;
+		}
+		// Step 8 (Wave 1)
+		if (m_Waves == 1)
+		{
+			if !instance_exists(objDrone)
+			{
+				Spawn10by4DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 10;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 20;
+				objDroneAiWaveManager.m_droneVerticalMovement = 20;
+				
+				if !instance_exists(objNeutralDrone)
+				{
+					instance_create_layer(-134, 300, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(-134, 375, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(-134, 450, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(-134, 525, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(1134, 300, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(1134, 375, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(1134, 450, "Layer_SplineTrackLeft", objNeutralDrone)
+					instance_create_layer(1134, 525, "Layer_SplineTrackLeft", objNeutralDrone)
+				}
+			}
+		}
+		// Step 8 (Wave 2)
+		if (m_Waves == 2)
+		{
+			if (timer % 800 = 0)
+			{
 
-				Spawn10by2DroneWave();
-		
+			}
+			if !instance_exists(objDrone)
+			{
+				Spawn10by4DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 8;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 20;
+				objDroneAiWaveManager.m_droneVerticalMovement = 30;
+			}
+		}
+		// Step 8 (Wave 3)
+		if (m_Waves == 3)
+		{
+			if (timer % 800 = 0)
+			{
+
+			}
+			if !instance_exists(objDrone)
+			{
+				Spawn10by4DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 7;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 20;
+				objDroneAiWaveManager.m_droneVerticalMovement = 40;
+			}
+		}
+		// Step 8 (Wave 4)
+		if (m_Waves == 4)
+		{
+			if (timer % 800 = 0)
+			{
+
+			}
+			if !instance_exists(objDrone)
+			{
+				Spawn10by4DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 6;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 50;
+			}
+		}
+		// Step 8 (Wave 5)
+		if (m_Waves == 5)
+		{
+			if (timer % 200 = 0)
+			{
+				var defiantDroneInstance1 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
+				defiantDroneInstance1.m_BezierTrack = true;
+				defiantDroneInstance1.m_SplineTrack = false;
+				defiantDroneInstance1.m_RightSideTrack = true;
+				defiantDroneInstance1.m_LeftSideTrack = false;
+					
+				var defiantDroneInstance2 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
+				defiantDroneInstance2.m_BezierTrack = true;
+				defiantDroneInstance2.m_SplineTrack = false;
+				defiantDroneInstance2.m_RightSideTrack = false;
+				defiantDroneInstance2.m_LeftSideTrack = true;
+				objDefiantDroneManager.m_BezierTrackSpeed = 210;
+				
+			}
+			else if (timer % 700 = 0)
+			{
+				var defiantDroneInstance1 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
+				defiantDroneInstance1.m_BezierTrack = false;
+				defiantDroneInstance1.m_SplineTrack = true;
+				defiantDroneInstance1.m_RightSideTrack = true;
+				defiantDroneInstance1.m_LeftSideTrack = false;
+					
+				var defiantDroneInstance2 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
+				defiantDroneInstance2.m_BezierTrack = false;
+				defiantDroneInstance2.m_SplineTrack = true;
+				defiantDroneInstance2.m_RightSideTrack = false;
+				defiantDroneInstance2.m_LeftSideTrack = true;
+				objDefiantDroneManager.m_SplineTrackSpeed = 100;
+	
+			}
+			if !instance_exists(objDrone)
+			{
+				Spawn10by4DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 5;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 60;
+			}
 		}
 	}
 	if (objPlayer.m_Orbs == 5)
