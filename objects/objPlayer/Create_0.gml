@@ -1,5 +1,17 @@
 image_speed = 0.5;
-
+glowShown = false;
+Display_Glow = function()
+{
+	if(m_SuperChargedAttack == true && glowShown == false)
+	{
+		instance_create_layer(x, y, "Layer_Bottom", objChargedShotGlowEffect);
+		glowShown = true;
+	}
+	else if (m_SuperChargedAttack == false && glowShown == true)
+	{
+		instance_destroy(objChargedShotGlowEffect);
+	}
+}
 
 ShootBaseShot = function()
 {

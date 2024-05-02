@@ -1,3 +1,5 @@
+Display_Glow();
+
 if (keyboard_check(vk_left) || keyboard_check(ord("A")))
 {
 	if(x >= 100)
@@ -64,6 +66,7 @@ if (keyboard_check_pressed(vk_space) && image_index >= 12)
 		instance_create_layer(x, y-30, layer, objSuperChargedPlayerProjectile);
 		image_index = 0;
 	}
+	
 }
 switch (m_Orbs)
 {

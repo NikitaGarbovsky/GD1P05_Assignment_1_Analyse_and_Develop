@@ -39,6 +39,7 @@
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_SoundDestroyShield","varType":5,"value":"soundDestoryShield","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_SoundEnergyHum","varType":5,"value":"soundEnergyHum","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_SoundDefiantDroneAlarm","varType":5,"value":"soundDefiantDroneAlarm","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"m_SoundDefiantDroneExplosion","varType":5,"value":"soundDefiantDroneExplosion","rangeEnabled":false,"rangeMin":0.0,"rangeMax":10.0,"listItems":[],"multiselect":false,"filters":[],},
   ],
   "overriddenProperties": [],
   "parent": {

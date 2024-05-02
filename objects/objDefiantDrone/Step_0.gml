@@ -12,7 +12,9 @@ if (m_MovingState == true)
 		objPlayer.m_SuperChargedAttack = true;
 		audio_play_sound(m_SoundDestroyShield,0,0);
 		audio_play_sound(m_SoundDefiantDroneAlarm, 0, 0);
+		objPlayer.glowShown = false;
 	}
+	// Checks for collision on the reflected projectiles
 	if collision_ellipse(x-21,y-74,x+21,y+74, objReflectedPlayerProjectile, true, true) != noone
 	{
 		instance_destroy(objReflectedPlayerProjectile);
@@ -111,13 +113,20 @@ else if (m_AttackingState == true)
 {
 	if collision_ellipse(x-16,y-61,x+16,y+61, objBasePlayerProjectile, true, true) != noone
 	{
-		instance_destroy(objBasePlayerProjectile);
+		var nearestShot = instance_nearest(x,y,objBasePlayerProjectile)
+		instance_destroy(nearestShot);
 		instance_destroy(self);
 	}
 	else if collision_ellipse(x-16,y-61,x+16,y+61, objSuperChargedPlayerProjectile, true, true) != noone
 	{
 		instance_destroy(self);
 		objPlayer.m_SuperChargedAttack = false;
+	}
+	else if collision_ellipse(x-16,y-61,x+16,y+61, objReflectedPlayerProjectile, true, true) != noone
+	{
+		var nearestShot = instance_nearest(x,y,objReflectedPlayerProjectile)
+		instance_destroy(nearestShot);
+		instance_destroy(self);
 	}
 	sprite_index = sprHostileDefiantDroneEnemy;
 	travelTime += 1; 
@@ -127,5 +136,14 @@ else if (m_AttackingState == true)
 		var alpha = travelTime / objDefiantDroneManager.m_LerpTowardsPlayerSpeed;
 		x = math_Lerp(x,objPlayer.x,alpha);
 		y = math_Lerp(y,objPlayer.y,alpha);
+	}
+	if collision_ellipse(x-16,y-61,x+16,y+61, objPlayer, true, true)
+	{
+		instance_destroy(self);
+		audio_play_sound(m_SoundDefiantDroneExplosion,0,0);
+		instance_destroy(objPlayer);
+		instance_destroy(objPlayerRectangle);
+		instance_destroy(objChargedShotGlowEffect);
+		audio_stop_sound(soundMainLevelSoundTrack);
 	}
 }
