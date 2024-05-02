@@ -13,6 +13,7 @@ if(droneCount == 1)
 		else if(objMainLevelManager.m_CompletedIntro2 == false)
 		{
 			objMainLevelManager.m_CompletedIntro2 = true;
+			objMainLevelManager.m_HaveSpawned  = false;
 		}
 		else if(objMainLevelManager.m_CompletedLevel1 == false)
 		{

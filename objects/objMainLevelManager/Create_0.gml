@@ -3,9 +3,6 @@ if !persistent
     persistent = true;
 }
 
-/// @description Insert description here
-// You can write your code in this editor
-
 time = 1000000;
 timer = time;
 

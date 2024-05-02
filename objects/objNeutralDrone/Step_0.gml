@@ -5,6 +5,7 @@ image_speed = m_NeutralDroneSpinSpeed;
 if (image_index >= 11 && image_index < 11.3)
 {
 	instance_create_layer(x+3, y-30, layer_get_id("Layer_SplineTrackRight"), objNeutralDroneProjectile);
+	audio_play_sound(soundBaseAttack,0,0)
 	image_index = 0;
 }
 
@@ -17,9 +18,9 @@ m_NDroneY2 = y + 51;
 if instance_exists(objSuperChargedPlayerProjectile)
 {
 	var projectile = instance_nearest(x, y, objSuperChargedPlayerProjectile)
-	if(projectile.m_x1 >= m_NDroneX1 && projectile.m_x2 <= m_NDroneX2 )
+	if(projectile.m_x2 >= m_NDroneX1 && projectile.m_x1 <= m_NDroneX2 )
 	{
-		if(projectile.m_y1 >= m_NDroneY1 && projectile.m_y2 <= m_NDroneY2 )
+		if(projectile.m_y2 >= m_NDroneY1 && projectile.m_y1 <= m_NDroneY2 )
 		{
 			instance_destroy();
 		}
@@ -29,24 +30,28 @@ if instance_exists(objSuperChargedPlayerProjectile)
 
 // Switch statement to manage difficulty of this enemy, 
 // which is based off the amount of orbs the player has.
-switch (objPlayer.m_Orbs)
+if instance_exists(objPlayer)
 {
-	case 1 :
-	m_NeutralDroneSpinSpeed = 0.1;
-	break;
-	case 2 :
-	m_NeutralDroneSpinSpeed = 0.2;
-	break;
-	case 3 :
-	m_NeutralDroneSpinSpeed = 0.3;
-	break;
-	case 4 : 
-	m_NeutralDroneSpinSpeed = 0.4;
-	break;
-	case 5 :
-	m_NeutralDroneSpinSpeed = 0.5;
-	break;
+	switch (objPlayer.m_Orbs)
+	{
+		case 1 :
+		m_NeutralDroneSpinSpeed = 0.1;
+		break;
+		case 2 :
+		m_NeutralDroneSpinSpeed = 0.2;
+		break;
+		case 3 :
+		m_NeutralDroneSpinSpeed = 0.3;
+		break;
+		case 4 : 
+		m_NeutralDroneSpinSpeed = 0.4;
+		break;
+		case 5 :
+		m_NeutralDroneSpinSpeed = 0.5;
+		break;
+	}
 }
+
 // Activates the deflecting of shots 
 if(self.m_DeflectShot == true)
 {

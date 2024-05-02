@@ -81,29 +81,29 @@ if (m_MovingState == true)
 		// Checks if the defiant drone is going to move through the right bezier curve track
 		if(m_RightSideTrack == true)
 		{
-		x = math_CubicBezier(rightSplinePoints[0].splinePointX, 
-							rightSplinePoints[1].splinePointX, 
-							rightSplinePoints[2].splinePointX, 
-							rightSplinePoints[3].splinePointX,
+		x = math_CubicBezier(rightSplinePoints[8].splinePointX, 
+							rightSplinePoints[9].splinePointX, 
+							rightSplinePoints[10].splinePointX, 
+							rightSplinePoints[11].splinePointX,
 							alpha);
-		y = math_CubicBezier(rightSplinePoints[0].splinePointY, 
-								rightSplinePoints[1].splinePointY,
-								rightSplinePoints[2].splinePointY,
-								rightSplinePoints[3].splinePointY,
+		y = math_CubicBezier(rightSplinePoints[8].splinePointY, 
+								rightSplinePoints[9].splinePointY,
+								rightSplinePoints[10].splinePointY,
+								rightSplinePoints[11].splinePointY,
 							alpha);
 		}
 		// Checks if the defiant drone is going ot move through the left bezier curve track
 		else if (m_LeftSideTrack == true)
 		{
-		x = math_CubicBezier(leftSplinePoints[0].splinePointX, 
-							leftSplinePoints[1].splinePointX, 
-							leftSplinePoints[2].splinePointX, 
-							leftSplinePoints[3].splinePointX,
+		x = math_CubicBezier(leftSplinePoints[8].splinePointX, 
+							leftSplinePoints[9].splinePointX, 
+							leftSplinePoints[10].splinePointX, 
+							leftSplinePoints[11].splinePointX,
 							alpha);
-		y = math_CubicBezier(leftSplinePoints[0].splinePointY, 
-							leftSplinePoints[1].splinePointY,
-							leftSplinePoints[2].splinePointY,
-							leftSplinePoints[3].splinePointY,
+		y = math_CubicBezier(leftSplinePoints[8].splinePointY, 
+							leftSplinePoints[9].splinePointY,
+							leftSplinePoints[10].splinePointY,
+							leftSplinePoints[11].splinePointY,
 							alpha);
 		}
 	}

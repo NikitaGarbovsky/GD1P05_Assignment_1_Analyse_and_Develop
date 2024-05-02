@@ -1,4 +1,4 @@
-var m_x1 = x -10;
+var m_x1 = x - 10;
 var m_x2 = x + 10;
 var m_y1 = y - 5;
 var m_y2 = y + 5;

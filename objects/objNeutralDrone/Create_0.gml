@@ -11,6 +11,6 @@ function SpawnProjectileDownward()
 }
 
 moveToX = irandom(room_width);
-moveToY = irandom(800);
+moveToY = irandom(700);
 
 move_towards_point(moveToX, moveToY, m_NeutralDroneMovementSpeed);
