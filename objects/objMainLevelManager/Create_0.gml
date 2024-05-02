@@ -6,7 +6,7 @@ if !persistent
 time = 1000000;
 timer = time;
 
-audio_play_sound(m_MainSoundtrack, 0, 0)
+audio_play_sound(m_MainSoundtrack, 0, true)
 Reset_Waves = function()
 {
 	m_Waves = 1;

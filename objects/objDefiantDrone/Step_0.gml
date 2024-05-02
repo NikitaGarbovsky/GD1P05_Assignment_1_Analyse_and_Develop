@@ -130,12 +130,15 @@ else if (m_AttackingState == true)
 	}
 	sprite_index = sprHostileDefiantDroneEnemy;
 	travelTime += 1; 
-	if (travelTime >= 200) // The defiant drone pauses briefly before attacking
+	if instance_exists(objPlayer)
 	{
-		// Calculates the speed to lerp towards the player
-		var alpha = travelTime / objDefiantDroneManager.m_LerpTowardsPlayerSpeed;
-		x = math_Lerp(x,objPlayer.x,alpha);
-		y = math_Lerp(y,objPlayer.y,alpha);
+		if (travelTime >= 200) // The defiant drone pauses briefly before attacking
+		{
+			// Calculates the speed to lerp towards the player
+			var alpha = travelTime / objDefiantDroneManager.m_LerpTowardsPlayerSpeed;
+			x = math_Lerp(x,objPlayer.x,alpha);
+			y = math_Lerp(y,objPlayer.y,alpha);
+		}
 	}
 	if collision_ellipse(x-16,y-61,x+16,y+61, objPlayer, true, true)
 	{
