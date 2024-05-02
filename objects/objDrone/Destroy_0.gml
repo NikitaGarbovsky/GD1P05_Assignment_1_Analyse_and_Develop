@@ -40,9 +40,24 @@ if(droneCount == 1)
 			objMainLevelManager.m_Waves = objMainLevelManager.m_Waves + 1;
 		}
 	}	
-else
+	else if (objPlayer.m_Orbs == 5)
 	{
-		Spawn10by4DroneWave();	
+		if (objMainLevelManager.m_Waves == 1)
+		{
+			objMainLevelManager.m_Waves = objMainLevelManager.m_Waves + 1;
+		}
+		else if (objMainLevelManager.m_Waves == 2)
+		{
+			objMainLevelManager.m_Waves = objMainLevelManager.m_Waves + 1;
+		}
+		else if (objMainLevelManager.m_Waves == 3)
+		{
+			objMainLevelManager.m_Waves = objMainLevelManager.m_Waves + 1;
+		}
+		else if (objMainLevelManager.m_Waves == 4)
+		{
+			objMainLevelManager.m_Waves = objMainLevelManager.m_Waves + 1;
+		}
 	}
 }
 

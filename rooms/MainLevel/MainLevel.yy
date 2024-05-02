@@ -58,6 +58,9 @@
             {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"m_RectangleOrder","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"objectId":{"name":"objPlayerRectangle","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"value":"1",},
           ],"isDnd":false,"objectId":{"name":"objPlayerRectangle","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":402.0,"y":847.0,},
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_6078E008","properties":[],"isDnd":false,"objectId":{"name":"objPlayerRectangle","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":536.0,"y":770.0,},
+        {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_7AA12E31","properties":[
+            {"resourceType":"GMOverriddenProperty","resourceVersion":"1.0","name":"","propertyId":{"name":"m_RectangleOrder","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"objectId":{"name":"objPlayerRectangle","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"value":"4",},
+          ],"isDnd":false,"objectId":{"name":"objPlayerRectangle","path":"objects/objPlayerRectangle/objPlayerRectangle.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":670.0,"y":847.0,},
       ],"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritVisibility":true,"inheritSubLayers":true,"gridX":67,"gridY":77,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],},
     {"resourceType":"GMRInstanceLayer","resourceVersion":"1.0","name":"Instances","instances":[
         {"resourceType":"GMRInstance","resourceVersion":"1.0","name":"inst_566434D2_1","properties":[],"isDnd":false,"objectId":{"name":"objDroneAiWaveManager","path":"objects/objDroneAiWaveManager/objDroneAiWaveManager.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1139.0,"y":462.0,},
@@ -113,6 +116,7 @@
     {"name":"inst_2A1C4072","path":"rooms/MainLevel/MainLevel.yy",},
     {"name":"inst_3C1C0237","path":"rooms/MainLevel/MainLevel.yy",},
     {"name":"inst_6078E008","path":"rooms/MainLevel/MainLevel.yy",},
+    {"name":"inst_7AA12E31","path":"rooms/MainLevel/MainLevel.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

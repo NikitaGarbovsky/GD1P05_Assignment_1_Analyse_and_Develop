@@ -10,7 +10,7 @@ function SpawnProjectileDownward()
 	projectile.image_angle = image_angle;
 }
 
-	moveToX = irandom(room_width);
-	moveToY = irandom_range(300,550);
+moveToX = irandom(room_width);
+moveToY = irandom_range(300,550);
 
 move_towards_point(moveToX, moveToY, m_NeutralDroneMovementSpeed);
