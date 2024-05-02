@@ -56,36 +56,6 @@ function vec2Add(_A,_B)
 	_A.x += _B.x;
 	_A.y += _B.y;
 }
-function vec2AddRv2(_A, _B)
-{
-	var resultant = 
-	{ 
-		x : _A.x + _B.x, 
-		y : _A.y + _B.y
-	};
-	return resultant;
-}
-function vec2Subtract(_A,_B)
-{
-	_A.x -= _B.x;
-	_A.y -= _B.y;
-}
-function vec2SubtractRv2(_A, _B)
-{
-	var resultant =
-	{
-		x: _A.x - _B.x, y : _A.y - _B.y	
-	};
-	return resultant;
-}
-function vec2ScalarMultiplyRv2(_A, _scalar)
-{
-	var resultant =
-	{
-		x : _A.x * _scalar, y : _A.y * _scalar	
-	};
-	return resultant;
-}
 function getAngleFacingPointDeg(_opposite, _adjacent)
 {
 	var theta = arctan2(-_opposite, _adjacent);

@@ -1,7 +1,7 @@
-var m_x1 = x - 10;
-var m_x2 = x + 10;
-var m_y1 = y - 5;
-var m_y2 = y + 5;
+m_x1 = x - 10;
+m_x2 = x + 10;
+m_y1 = y - 5;
+m_y2 = y + 5;
 
 UpwardDirection2 = { x : -5, y : -9 };
 UpwardDirection3 = { x : 0, y : -10 };
@@ -82,10 +82,6 @@ vec2Add(m_v2Position, m_v2Velocity)
 
 x = m_v2Position.x;
 y = m_v2Position.y;
-
-
-// Checks for collision from the players base attack
-// 
 
 
 if instance_exists(objNeutralDrone)

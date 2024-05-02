@@ -1,17 +1,17 @@
 // Use the keys 1-4 to spawn various waves of space invaders
-if (keyboard_check_pressed(ord("1")))
+if (keyboard_check_pressed(ord("1")) && room_get_name(room) != "MainLevel")
 {
 	Spawn10by1DroneWave();
 }
-if (keyboard_check_pressed(ord("2")))
+if (keyboard_check_pressed(ord("2")) && room_get_name(room) != "MainLevel")
 {
 	Spawn10by2DroneWave();
 }    
-if (keyboard_check_pressed(ord("3")))
+if (keyboard_check_pressed(ord("3")) && room_get_name(room) != "MainLevel")
 {
 	Spawn10by3DroneWave();
 }
-if (keyboard_check_pressed(ord("4")))
+if (keyboard_check_pressed(ord("4")) && room_get_name(room) != "MainLevel")
 {
 	Spawn10by4DroneWave();
 }

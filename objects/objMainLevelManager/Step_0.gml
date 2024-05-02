@@ -11,6 +11,7 @@ if(keyboard_check(vk_escape))
 	objMainLevelManager.persistent = false;
 	instance_destroy(objMainLevelManager)
 	audio_stop_sound(m_MainSoundtrack);
+	audio_stop_sound(m_SoundEnergyHum);
 	room_goto(MainMenu);
 }
 if(timer <= 0)
@@ -19,7 +20,8 @@ if(timer <= 0)
 	timer = time;
 }
 	timer--;
-if instance_exists(objPlayer)
+// Starts the progression through the levels of the game
+if (instance_exists(objPlayer) && m_HasWon == false)
 {
 	// LEVEL 1
 	if (objPlayer.m_Orbs == 1)
@@ -429,13 +431,13 @@ if instance_exists(objPlayer)
 			{
 				Spawn10by4DroneWave();
 				objDroneAiWaveManager.m_enemyMovespeed = 6;
-				objDroneAiWaveManager.m_droneHorizontalMovement = 50;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 40;
 			}
 		}
 		// Step 8 (Wave 5)
 		if (m_Waves == 5)
 		{
-			if (timer % 200 = 0)
+			if (timer % 300 = 0)
 			{
 				var defiantDroneInstance1 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
 				defiantDroneInstance1.m_BezierTrack = true;
@@ -451,7 +453,7 @@ if instance_exists(objPlayer)
 				objDefiantDroneManager.m_BezierTrackSpeed = 210;
 				
 			}
-			else if (timer % 700 = 0)
+			else if (timer % 400 = 0)
 			{
 				var defiantDroneInstance1 = instance_create_layer(-134, 770, "Layer_SplineTrackLeft", objDefiantDrone)
 				defiantDroneInstance1.m_BezierTrack = false;
@@ -471,7 +473,8 @@ if instance_exists(objPlayer)
 			{
 				Spawn10by4DroneWave();
 				objDroneAiWaveManager.m_enemyMovespeed = 5;
-				objDroneAiWaveManager.m_droneHorizontalMovement = 60;
+				objDroneAiWaveManager.m_droneHorizontalMovement = 50;
+				instance_create_layer(-134, 300, "Layer_SplineTrackLeft", objNeutralDrone)
 			}
 		}
 	}

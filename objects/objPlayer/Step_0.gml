@@ -74,30 +74,35 @@ switch (m_Orbs)
 	{
 		m_PlayerShipShootingSpeed = 0.2;
 		sprite_index = sprPlayerShipOrb1_Sheet;
+		m_PlayerShipMovementSpeed = 8;
 		break;
 	}
 	case 2:
 	{
 		m_PlayerShipShootingSpeed = 0.4;
 		sprite_index = sprPlayerShipOrb2_Sheet;
+		m_PlayerShipMovementSpeed = 9;
 		break;
 	}
 	case 3:
 	{
 		m_PlayerShipShootingSpeed = 0.6;
 		sprite_index = sprPlayerShipOrb3_Sheet;
+		m_PlayerShipMovementSpeed = 10;
 		break;
 	}
 	case 4:
 	{
 		m_PlayerShipShootingSpeed = 0.8;
 		sprite_index = sprPlayerShipOrb4_Sheet;
+		m_PlayerShipMovementSpeed = 11;
 		break;
 	}
 	case 5:
 	{
 		m_PlayerShipShootingSpeed = 1;
 		sprite_index = sprPlayerShipOrb5_Sheet;
+		m_PlayerShipMovementSpeed = 12;
 		break;
 	}
 }
@@ -110,4 +115,14 @@ if !(image_index > 12)
 else 
 {
 	image_speed = 0;
+}
+with (objDrone)
+{
+	var dist = getDistance(x,y,other.x, other.y);
+	// If this distance is less than (drone radius plus this projectile radius)
+	if (dist < (m_droneCollisionRadius + other.m_PlayerShipCollisionRadius))
+	{	
+		instance_destroy(objPlayer);
+		audio_play_sound(soundDefiantDroneExplosion,0,0);
+	}
 }
