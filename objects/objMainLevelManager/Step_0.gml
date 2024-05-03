@@ -11,7 +11,7 @@ if(keyboard_check(vk_escape))
 	objMainLevelManager.persistent = false;
 	instance_destroy(objMainLevelManager)
 	audio_stop_sound(m_MainSoundtrack);
-	audio_stop_sound(m_SoundEnergyHum);
+	audio_stop_sound(soundEnergyHum);
 	room_goto(MainMenu);
 }
 if(timer <= 0)
@@ -99,11 +99,15 @@ if (instance_exists(objPlayer) && m_HasWon == false)
 			{
 				// Step 2
 				Spawn10by2DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 20;
+				objDroneAiWaveManager.m_droneVerticalMovement = 15;
 			}
 			else if (m_CompletedIntro2 == true && m_CompletedLevel1 == false)
 			{
 				// Step 3
 				Spawn10by3DroneWave();
+				objDroneAiWaveManager.m_enemyMovespeed = 17;
+				objDroneAiWaveManager.m_droneVerticalMovement = 20;
 			}
 			else 
 			{

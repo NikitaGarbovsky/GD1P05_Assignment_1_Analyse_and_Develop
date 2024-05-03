@@ -64,6 +64,8 @@ function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 	// Before we spawn in drones, we need to check if there are already some that exist,
 	// We do this because we need to sync the movement direction of the drones that will spawn,
 	// To the ones already on the screen. Otherwise they will bug out moving in different directions.
+	
+	// (the syncing didnt end up being needed after the levels were created, but its there just incase)
 	if instance_exists(objDrone)
 	{
 		if(objDrone.m_movingRight == true)
@@ -77,7 +79,7 @@ function SpawnDrone(_droneXSpawnPosition, _droneYSpawnPosition)
 			dronesAreMovingLeft = true;
 		}
 	}
-	// Spawn the actual drone
+	// Spawns the actual drone
 	G_spawningDrone = instance_create_layer(_droneXSpawnPosition, _droneYSpawnPosition , "Instances", objDrone);
 	G_spawningDrone.image_alpha = 0;
 }

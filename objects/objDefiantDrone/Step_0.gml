@@ -2,6 +2,10 @@
 // Moves through the spline or bezier curve track
 if (m_MovingState == true)
 {
+	if (y <= -50 && !instance_exists(objDefiantDrone))
+	{
+		audio_stop_sound(soundEnergyHum);
+	}
 	// Checks for collision on the players projectile.
 	if collision_ellipse(x-21,y-74,x+21,y+74, objBasePlayerProjectile, true, true) != noone
 	{
