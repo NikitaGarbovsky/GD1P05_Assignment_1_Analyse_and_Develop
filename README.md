@@ -8,6 +8,8 @@ This project was the first Assessment assigned to students within the Gameplay P
 
 ## Gameplay
 
+![](https://github.com/NikitaGarbovsky/GD1P05_Assignment_1_Analyse_and_Develop/blob/master/gifs/Gameplay.gif)
+
 Gameplay consists of positioning the player controlled ship to positions horizontally on the screen, shooting projectiles and destroying a variety of different types of "drone" ships. 
 
 When the player destroys a rectangular reflective drone with their empowered square attack, the rectangle attaches itself to the player ship, and increases its firepower throughput. 
