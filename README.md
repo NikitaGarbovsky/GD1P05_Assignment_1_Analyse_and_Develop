@@ -1,21 +1,19 @@
-<p align="center">
+
 # Drone Invaders!
 ### Drone Invaders is a twist on the classic arcade game space invaders.
-</p>
+
 
 ![](https://github.com/NikitaGarbovsky/GD1P05_Assignment_1_Analyse_and_Develop/blob/master/gifs/StartMenuGifs.gif)
 
-<p align="center">
+
 ## Description
-</p>
+
 
 This project was the first Assessment assigned to students within the Gameplay Programming GD1P05 Paper for the first Semester at Media Design School.
 
 It was created using GameMakerStudio2 and the GML programming language. Assets were created and also found online. (See resources below)
 
-<p align="center">
 ## Gameplay
-</p>
 
 ![](https://github.com/NikitaGarbovsky/GD1P05_Assignment_1_Analyse_and_Develop/blob/master/gifs/Gameplay.gif)
 
@@ -25,9 +23,7 @@ When the player destroys a rectangular reflective drone with their empowered squ
 
 The players win condition is destroying the 4 large red barriers once acquiring all 5 orbs and 4 rectangles, empowering the players attack.
 
-<p align="center">
 ## Resources
-</p>
 
 This project was exclusively used for academic purposes only. I created all pixel art in the game but some resources were found online, such as the sounds, music, font. 
 
